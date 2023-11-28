@@ -1,0 +1,811 @@
+/* ==UserStyle==
+@name           15/11/2023, 18:13:08
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document url-prefix("https://brandenburg.cloud")
+{
+    body
+    {
+        background-color: #020902 !important;
+    }
+    p
+    {
+        color: #fbfefb;
+    }
+    .card-block
+    {
+        /* Boxen um Dateien*/
+        background-color: #051414;
+        border: 2px solid;
+        border-radius: 10px;
+        border-color: #61db7d;
+    }
+    .card
+    {
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid rgba(0, 0, 0, 0);
+    }
+
+
+    #page-title
+    {
+        background-image: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000, #ffff00);
+        background-size: 700% 100%;
+        animation: headerGradient 20s linear infinite;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        width: max-content;
+    }
+
+    footer.small-footer .imprint .center
+    {
+        color: #fbfefb;
+    }
+
+
+    body header
+    {
+
+        background-image: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000, #ffff00);
+        background-size: 700% 100%;
+        box-shadow: none;
+        animation: headerGradient 20s linear infinite;
+    }
+
+    label
+    {
+        color: #fbfefb;
+    }
+
+    body header #title .cloud-logo
+    {
+        margin-bottom: 8px;
+    }
+
+    body #loginarea input
+    {
+        /* login Felder*/
+        font-size: 1rem;
+        padding: .5rem;
+        background-color: #0c532f41;
+        color: #fbfefb;
+        border: 1px solid #0c5330;
+    }
+
+    body #loginarea .btn
+    {
+        background-color: #0c532f41;
+        border: 1px solid #0c5330;
+        color: #fbfefb;
+    }
+
+    #submit-login
+    {
+        animation: colorPalette 5s linear infinite;
+        font-size: 18px;
+    }
+
+    #submit-login:hover
+    {
+        animation: letterSpacing 5s linear infinite, colorPalette 5s linear infinite;
+    }
+
+    div.input-group-addon
+    {
+        background-color: #0c532f41;
+        border: 1px solid #0c5330;
+    }
+
+    .chosen-container-active.chosen-with-drop .chosen-single
+    {
+        background-color: #082711;
+        border: 1px solid #0c5330;
+    }
+    .chosen-container-active.chosen-with-drop .chosen-single:hover
+    {
+        color: #61db7d;
+    }
+
+    div.login-providers a.chosen-single
+    {
+        background-color: #082711;
+        border: 1px solid #0c5330;
+        color: #fbfefb;
+    }
+    div.login-providers a.chosen-single:hover
+    {
+        color: #61db7d;
+    }
+
+    div.login-providers div.chosen-drop
+    {
+        background-color: #082711;
+        border: 1px solid #0c5330;
+        color: #fbfefb;
+    }
+
+    div.login-providers div.chosen-drop:hover
+    {
+        color: #61db7d;
+    }
+
+    .chosen-container .chosen-results li.highlighted
+    {
+        background: #61db7d;
+        color: #fbfefb;
+    }
+    .chosen-container .chosen-results li em
+    {
+        background: none;
+        color: #fbfefb;
+    }
+    .chosen-container .chosen-results .no-results
+    {
+        background-color: #082711;
+    }
+
+
+    body #loginarea button
+    {
+        background-color: #082711;
+        border: none;
+        color: #fbfefb;
+    }
+
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+    {
+        margin-bottom: .5rem;
+        font-family: "PT Sans Narrow", "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.1;
+        color: #fbfefb;
+    }
+
+    .card-block
+    {
+        background-color: #071807;
+    }
+
+
+    @keyframes colorPalette
+    {
+        0%,
+        100%
+        {
+            color: #ff0000;
+        }
+        12.5%
+        {
+            color: #ff8000;
+        }
+        25%
+        {
+            color: #ffff00;
+        }
+        37.5%
+        {
+            color: #00ff00;
+        }
+        50%
+        {
+            color: #0000ff;
+        }
+        62.5%
+        {
+            color: #9500ff;
+        }
+        75%
+        {
+            color: #ea00ff;
+        }
+        87.5%
+        {
+            color: #ff0000;
+        }
+    }
+
+    @keyframes headerGradient
+    {
+        0%
+        {
+            background-position: 100% 0%;
+        }
+        100%
+        {
+            background-position: 0% 0%;
+        }
+    }
+
+    @keyframes letterSpacing
+    {
+        0%
+        {
+            letter-spacing: 0px;
+        }
+        50%
+        {
+            letter-spacing: 6px;
+        }
+        100%
+        {
+            letter-spacing: 0px;
+        }
+    }
+
+
+    h1.h4.card-title
+    {
+        color: #fbfefb;
+    }
+
+    .navbar-nav .minimal-button .dropdown-toggle .fa,
+    .navbar-nav .minimal-button .dropdown-toggle .mdi
+    {
+        color: #73f16f;
+    }
+
+    li
+    {
+        color: #fbfefb;
+    }
+    /*Tabs Linker Rand*/
+    aside.nav-sidebar ul
+    {
+        background-color: #020902;
+    }
+    aside.nav-sidebar ul li a:not(.sc-branding).active
+    {
+        color: #73f16f;
+        background: linear-gradient(to right, #103b10, #020902);
+    }
+    aside.nav-sidebar ul li a:not(.sc-branding)
+    {
+        color: #73f16f;
+        fill: #73f16f;
+    }
+    aside.nav-sidebar ul li a:not(.sc-branding)[href]:hover
+    {
+        background: linear-gradient(to right, #103b10, #020902);
+    }
+    aside.nav-sidebar
+    {
+        background-color: transparent;
+        border-right: 1.5px solid #20441e;
+    }
+    .sidebar .contents .list
+    {
+        background-color: #020902;
+    }
+    .sidebar .contents .list .list-item.active .list-content,
+    .sidebar .contents .list .list-item.child-active .list-content
+    {
+        color: #73f16f;
+        background: linear-gradient(to right, #103b10, #020902);
+    }
+    .sidebar .contents .list .list-item .list-content
+    {
+        color: #73f16f;
+    }
+    span.side-bar-title
+    {
+        color: #73f16f;
+    }
+    .v-icon__component,
+    .v-icon__svg
+    {
+        fill: #73f16f;
+    }
+
+    .navbar
+    {
+        border-radius: 0px;
+        border-bottom: 1.5px solid #20441e;
+    }
+
+    a.list-content.text-only:hover
+    {
+        background: linear-gradient(to right, #103b10, #020902);
+    }
+
+    main#main-content.v-main.content
+    {
+        background: #020902;
+    }
+
+    .sticky[data-v-52a036e1]
+    {
+        background-color: transparent;
+    }
+
+    .v-application .secondary--text
+    {
+        color: #73f16f !important;
+    }
+
+    /* Teams Karten*/
+    .sc-card
+    {
+        box-shadow: none;
+        border: 1.5px solid #20441e;
+        border-radius: 10px;
+    }
+    .sc-card .tag
+    {
+        background: #381f10;
+        color: #943a3a;
+    }
+    .sc-card .sc-card-body
+    {
+        border: none;
+        color: #2eb02e;
+    }
+    .sc-card .sc-card-header .sc-card-title .title
+    {
+        font-size: 22px;
+    }
+    .sc-card .sc-card-footer a,
+    .sc-card .sc-card-footer button
+    {
+        color: #fbfefb;
+        background: transparent;
+        border: 1px solid#20441e;
+    }
+    .sc-card .sc-card-footer a:hover,
+    .sc-card .sc-card-footer button:hover
+    {
+        background: #0a250a;
+    }
+
+    .center:after
+    {
+        color: #73f16f;
+        background-color: #61db7e41;
+        content: " Style by Daniel Lehmann 09818610102020m@gmail.com";
+        border-radius: 0.5rem;
+        font-size: 0.6rem;
+        padding: 0.5rem;
+    }
+    .section-title::after
+    {
+        color: red;
+        padding-left: 1rem;
+        content: "Dieser Style ist noch in Entwicklung - dies ist eine Vorschauversion. Vielen Dank für Ihr Verständnis und Ihre Geduld! Feedback bitte an 09818610102020m@gmail.com";
+    }
+
+    /*Teams Suchleiste*/
+    .input-group .form-control:not(:first-child):not(:last-child),
+    .input-group-addon:not(:first-child):not(:last-child),
+    .input-group-btn:not(:first-child):not(:last-child)
+    {
+        background: transparent;
+        border: 1.5px solid #20441e;
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .input-group-btn:not(:first-child) > .btn,
+    .input-group-btn:not(:first-child) > .btn-group
+    {
+        background: transparent;
+        color: #fbfefb;
+        border-width: 1.5px;
+        border-color: #20441e;
+    }
+
+    /*Gestellt Aufgaben Liste*/
+    .card-block
+    {
+        background-color: #020902;
+    }
+    .text-muted
+    {
+        color: #fbfefb !important;
+    }
+    .homework-link .homework-tile
+    {
+        border-bottom: 1.5px solid #20441e;
+    }
+    .homework-link .homework-tile:hover
+    {
+        background-color: #0a250a;
+        color: #fbfefb;
+    }
+    .homework-link
+    {
+        color: #fbfefb;
+    }
+
+    /*Im Aufgaben Tab*/
+    .theme--light.v-application
+    {
+        background: #020902;
+    }
+    .v-main__wrap
+    {
+        background: transparent;
+    }
+    .sidebar[data-v-380ef7fd]
+    {
+        box-shadow: none;
+    }
+
+    .sidebar .top-sidebar
+    {
+        background: #020902;
+    }
+
+    h1.text-h3
+    {
+        background-image: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000, #ffff00);
+        background-size: 700% 100%;
+        animation: headerGradient 20s linear infinite;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        width: max-content;
+        height: 44px;
+    }
+
+    .v-tab.v-tab
+    {
+        background: #020902;
+        color: #fbfefb !important;
+        border: 1px solid #20441e;
+        width: 1rem;
+    }
+
+    .v-application .primary--text
+    {
+        color: #73f16f !important;
+    }
+
+    .theme--light.v-text-field--solo > .v-input__control > .v-input__slot
+    {
+        background: #020902;
+        border: 1px solid #20441e;
+    }
+
+    .v-text-field .v-label
+    {
+        color: #fbfefb;
+    }
+
+    .theme--light.v-list
+    {
+        background-color: #020902;
+    }
+
+    .v-list-item__content
+    {
+        color: #fbfefb;
+    }
+
+    .theme--light.v-application
+    {
+        color: #fbfefb;
+    }
+
+    .v-application .pb-16
+    {
+        background-color: #020902;
+    }
+    .theme--light.v-expansion-panels .v-expansion-panel
+    {
+        background: #020902;
+        border: 1px solid #20441e;
+        color: #fbfefb;
+    }
+
+    .theme--light.v-expansion-panels .v-expansion-panel--disabled
+    {
+        color: #fbfefba6;
+    }
+
+    .v-application .pa-0
+    {
+        padding-left: 10px !important;
+    }
+
+    .theme--light.v-subheader
+    {
+        color: #fbfefb;
+    }
+
+    .theme--light.v-list-item:not(.v-list-item--disabled) .v-list-item__action-text,
+    .theme--light.v-list-item:not(.v-list-item--disabled) .v-list-item__subtitle
+    {
+        color: #73f16f82;
+    }
+
+    .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled)
+    {
+        color: #fdfdfd;
+    }
+
+    #completed
+    {
+        background: #020902;
+    }
+
+    .wireframe-header.sticky
+    {
+        background-color: #020902;
+    }
+
+    /* Spezifische Aufgabe*/
+    .section-homework .maintabs > .tab-links .tab-link
+    {
+        margin-top: 0;
+    }
+
+    .tab-links
+    {
+        border: 1.5px solid #20441e;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .col-md-4
+    {
+        padding-bottom: 30px;
+    }
+
+    .tab-link.active
+    {
+        font-weight: 700;
+        color: #fff !important;
+        border-bottom: 4px solid #20441e;
+    }
+
+    .tab-link:focus,
+    .tab-link:hover
+    {
+        text-decoration: none;
+        font-weight: 700;
+        color: #73f16f !important;
+    }
+    .tab-link
+    {
+        color: #fbfefb;
+    }
+    .assignment .description
+    {
+        color: #fbfefb;
+    }
+
+    .section-homework .dates i.closed
+    {
+        color: #fbfefb;
+    }
+    .btn-secondary
+    {
+        color: #73f16f;
+        background-color: #0b2e0b26;
+        border-color: #20441e;
+    }
+
+    .btn-secondary:hover
+    {
+        color: #73f16f;
+        background-color: transparent;
+        border-color: #20441e;
+    }
+
+    .files .card.file
+    {
+        color: #73f16f82;
+    }
+
+    .files .card.file:hover
+    {
+        background-color: transparent;
+    }
+
+    .card-block:hover
+    {
+        border-color: #fbfefb;
+    }
+
+    .assignment .description a
+    {
+        animation: colorPalette 5s linear infinite;
+    }
+
+    /* Abgabe*/
+    .submissionLabel
+    {
+        color: #fbfefb;
+    }
+
+    .ck.ck-icon :not([fill])
+    {
+        color: #73f16f;
+    }
+
+    .ck.ck-editor__main > .ck-editor__editable
+    {
+        border-color: #20441e;
+        background: #030f03;
+    }
+    .ck.ck-editor__main > .ck-editor__editable:not(.ck-focused),
+    .ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
+    .ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners
+    {
+        border-color: #20441e;
+        border-width: 1.5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .ck.ck-toolbar > .ck-toolbar__items
+    {
+        background: #030f03;
+        border: 1.5px solid #20441e;
+        border-bottom: none;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .ck.ck-toolbar.ck-toolbar_grouping
+    {
+        background: transparent;
+        border: none;
+    }
+    .ck.ck-toolbar
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    span.ck.ck-toolbar__separator
+    {
+        background: #20441e !important;
+    }
+
+    .ck.ck-button.ck-off.ck-button_with-text.ck-dropdown__button
+    {
+        color: #73f16f;
+    }
+    .ck.ck-button:not(.ck-disabled):hover,
+    a.ck.ck-button:not(.ck-disabled):hover
+    {
+        background-color: #73f16f1d;
+    }
+
+    .section-upload .form-files-storage,
+    .section-upload .form-files-storage-disabled,
+    .section-upload .form-upload
+    {
+        background: #020902;
+        border-color: #20441e;
+        border-radius: 3rem;
+    }
+
+    .form-upload,
+    .form-files-storage,
+    .form-files-storage-disabled
+    {
+        &.focus
+        {
+            background: #73f16f1d !important;
+        }
+    }
+
+    /*Kurse Tab*/
+    .justify-center.mt-2.subtitle.mb-7
+    {
+        color: #fbfefb
+    }
+    .footer:after
+    {
+        color: #73f16f;
+        background-color: #61db7e41;
+        content: "Style by Daniel Lehmann 09818610102020m@gmail.com";
+        border-radius: 0.5rem;
+        font-size: 0.6rem;
+        padding: 0.5rem;
+
+        /* 1Kurs*/
+        .theme--light.v-card
+        {
+            background-color: #61db7e41 !important;
+        }
+    }
+
+    aside.nav-sidebar ul li a:not(.sc-branding).child-active
+    {
+        color: #73f16f;
+    }
+
+    aside.nav-sidebar ul li a:not(.sc-branding).active svg
+    {
+        fill: #73f16f !important;
+    }
+
+    .card-header
+    {
+        background-color: #0a250a;
+    }
+    .card-header:hover
+    {
+        background-color: #1c591c;
+    }
+
+    summary
+    {
+        color: #fbfefb8a;
+    }
+
+    a
+    {
+        color: #73f16f;
+    }
+
+    a:focus,
+    a:hover
+    {
+        color: #235922
+    }
+    .directories .card-title-directory
+    {
+        color: #73f16f;
+    }
+
+    .directories .card.folder:hover
+    {
+        background-color: hsla(118, 53%, 29%, .12);
+    }
+    .directories .card.folder:hover
+    {
+        box-shadow: none;
+    }
+    .card-block:hover
+    {
+        background: transparent
+    }
+    .card-block:hover
+    {
+        border-color: #20441e
+    }
+    .card-block
+    {
+        border-color: #20441e
+    }
+
+    .directories .card.folder .fa
+    {
+        color: #73f16f82;
+        animation: hueShift 10s linear infinite !important;
+    }
+    .chosen-container .chosen-drop
+    {
+        background-color: #082711
+    }
+    .chosen-container-single .chosen-single
+    {
+        background-color: #061606;
+        border: 1px solid #20441e;
+        color: #fbfefb
+    }
+    .chosen-container-single .chosen-single span
+    {
+        color: #fbfefb
+    }
+    .chosen-container .chosen-results li.highlighted
+    {
+        background-color: #73f16f14
+    }
+}
