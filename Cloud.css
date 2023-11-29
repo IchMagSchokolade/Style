@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           15/11/2023, 18:13:08
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.6
 @description    A new userstyle
 @author         Me
 ==/UserStyle== */
@@ -807,5 +807,54 @@
     .chosen-container .chosen-results li.highlighted
     {
         background-color: #73f16f14
+    }
+    #sortButton
+    {
+        background-color: #061606 !important;
+        border: 1px solid #20441e !important;
+        color: #fbfefb;
+    }
+    .files .card.file .fa:hover
+    {
+        color: #73f16f
+    }
+    .modal-content
+    {
+        background-color: #020902;
+        border: 1.5px solid #73f16f;
+    }
+    .modal-footer
+    {
+        border-top: 1px solid #73f16f;
+    }
+    .modal-header
+    {
+        border-bottom: 1px solid #73f16f;
+    }
+
+    .btn-primary
+    {
+        background-color: #061606;
+        border: 1px solid #20441e;
+        color: #fbfefb
+    }
+    .btn-primary:hover
+    {
+        background-color: #020902;
+        border: 1px solid #20441e;
+        color: #fbfefb
+    }
+    .close
+    {
+        color: #73f16f;
+        text-shadow: none;
+        opacity: 1;
+    }
+    .close:focus,
+    .close:hover
+    {
+        opacity: 1;
+        color: #991b0d;
+        text-shadow: 0 0 10px #f00, 0 0 40px #e31e08a8;
     }
 }
