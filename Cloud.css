@@ -857,4 +857,9 @@
         color: #991b0d;
         text-shadow: 0 0 10px #f00, 0 0 40px #e31e08a8;
     }
+
+    .col-sm-12.text-center
+    {
+        text-shadow: 0 0 10px #73f16f, 0 0 40px #73f16f, 0 0 80px #73f16f;
+    }
 }
