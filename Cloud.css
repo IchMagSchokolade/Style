@@ -862,4 +862,33 @@
     {
         text-shadow: 0 0 10px #73f16f, 0 0 40px #73f16f, 0 0 80px #73f16f;
     }
+
+    .ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list,
+    .ck.ck-dropdown .ck-dropdown__panel .ck-list.ck-rounded-corners
+    {
+        background: #030f03;
+        border: 1.5px solid #20441e
+    }
+    .ck.ck-list__item .ck-button.ck-on:not(.ck-disabled)
+    {
+        background: #73f16f1d
+    }
+    .ck.ck-list__item .ck-button.ck-on:hover:not(.ck-disabled),
+    .ck.ck-list__item .ck-button:hover:not(.ck-disabled)
+    {
+        background: #73f16f52
+    }
+    .ck .ck-button
+    {
+        color: #73f16f
+    }
+    .ck.ck-button.ck-on,
+    a.ck.ck-button.ck-on
+    {
+        background: #73f16f1d
+    }
+    .ck.ck-list__item .ck-button.ck-on
+    {
+        color: #73f16f
+    }
 }
