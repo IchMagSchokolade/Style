@@ -1,5 +1,6 @@
-Theme for brandenburg.cloud for stylus
+Theme(s) for stylus by me
 
 stylus for Firefox: https://addons.mozilla.org/en-GB/firefox/addon/styl-us/
 
-Theme: https://userstyles.world/style/13089/
+Cloud (brandenburg.cloud): 
+https://userstyles.world/style/13089/
