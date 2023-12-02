@@ -371,14 +371,16 @@
         background: #0a250a;
     }
 
-    .center:after
+    .center:after,
+    .footer:after
     {
         color: #73f16f;
-        background-color: #61db7e41;
+        background-color: hsla(118, 53%, 29%, .12);
         content: " Style by Daniel Lehmann 09818610102020m@gmail.com";
-        border-radius: 0.5rem;
+
         font-size: 0.6rem;
         padding: 0.5rem;
+        display: flow-root;
     }
     .section-title::after
     {
@@ -709,21 +711,14 @@
     {
         color: #fbfefb
     }
-    .footer:after
-    {
-        color: #73f16f;
-        background-color: #61db7e41;
-        content: "Style by Daniel Lehmann 09818610102020m@gmail.com";
-        border-radius: 0.5rem;
-        font-size: 0.6rem;
-        padding: 0.5rem;
 
-        /* 1Kurs*/
-        .theme--light.v-card
-        {
-            background-color: #61db7e41 !important;
-        }
+
+    /* 1Kurs*/
+    .theme--light.v-card
+    {
+        background-color: #61db7e41 !important;
     }
+
 
     aside.nav-sidebar ul li a:not(.sc-branding).child-active
     {
@@ -890,5 +885,16 @@
     .ck.ck-list__item .ck-button.ck-on
     {
         color: #73f16f
+    }
+
+    .footer
+    {
+        color: #fbfefb !important
+    }
+    .footer-link
+    {
+        color: #73f16f !important;
+        font-size: 18px;
+        padding-bottom: 10px
     }
 }
