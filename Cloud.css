@@ -917,4 +917,23 @@
         color: #fbfefb;
         background: #73f16f1d;
     }
+    .form-control
+    {
+        background-color: #061606;
+        border: 1px solid #20441e;
+        color: #fbfefb;
+    }
+    .form-control:focus
+    {
+        color: #fbfefb;
+        background-color: #020902;
+        border-color: #20441e;
+        text-shadow: 0 0 10px #fbfefb;
+    }
+    code
+    {
+        color: #73f16f;
+        background-color: #061606;
+        border: 1px solid #20441e;
+    }
 }
