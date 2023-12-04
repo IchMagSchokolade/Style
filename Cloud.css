@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           15/11/2023, 18:13:08
+@name           Hackerman
 @namespace      github.com/openstyles/stylus
-@version        1.0.6
-@description    A new userstyle
-@author         Me
+@version        1.0.8
+@description    Hackerman
+@author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 ==/UserStyle== */
 @-moz-document url-prefix("https://brandenburg.cloud")
 {
@@ -376,7 +376,7 @@
     {
         color: #73f16f;
         background-color: hsla(118, 53%, 29%, .12);
-        content: " Style by Daniel Lehmann 09818610102020m@gmail.com";
+        content: " Style by Daniel Lehmann (https://github.com/IchMagSchokolade)";
 
         font-size: 0.6rem;
         padding: 0.5rem;
@@ -896,5 +896,25 @@
         color: #73f16f !important;
         font-size: 18px;
         padding-bottom: 10px
+    }
+
+    .dropdown-menu
+    {
+        background: #071807;
+        border: 1px solid #73f16f
+    }
+    .navbar-nav .btn-avatar .dropdown-name
+    {
+        border-bottom: 1px solid #73f16f
+    }
+    .dropdown-item
+    {
+        color: #fbfefb
+    }
+    .dropdown-item:focus,
+    .dropdown-item:hover
+    {
+        color: #fbfefb;
+        background: #73f16f1d;
     }
 }
