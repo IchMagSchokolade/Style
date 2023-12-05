@@ -716,7 +716,7 @@
     /* 1Kurs*/
     .theme--light.v-card
     {
-        background-color: #61db7e41 !important;
+        background-color: #73f16f14 !important;
     }
 
 
@@ -935,5 +935,23 @@
         color: #73f16f;
         background-color: #061606;
         border: 1px solid #20441e;
+    }
+
+    .justify-center.mt-2.subtitle.mb-5
+    {
+        color: #494949
+    }
+
+    .grey.lighten-2.chip-item.px-1.mr-1.mb-0
+    {
+        color: #73f16f;
+        background-color: transparent !important;
+        border: 1px dashed #20441e !important;
+    }
+
+    .assignment .more
+    {
+        color: #20441e;
+        text-shadow: 0 0 5px, 0 0 10px
     }
 }
