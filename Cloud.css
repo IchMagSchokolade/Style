@@ -998,4 +998,9 @@
         border-color: #20441e;
         color: #73f16f
     }
+
+    .parrot-text.parrot-default
+    {
+        color: #fbfefb
+    }
 }
