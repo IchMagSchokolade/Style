@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hackerman
 @namespace      github.com/openstyles/stylus
-@version        1.0.9
+@version        1.0.10
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 ==/UserStyle== */
@@ -968,5 +968,34 @@
         color: #fbfefb;
         background-color: #071807;
         border-color: #73f16f;
+    }
+
+    .route-calendar .fullcalendar .fc-toolbar .fc-button
+    {
+        background: #071807 !important;
+        color: #fbfefb;
+        border-color: #20441e;
+    }
+    .route-calendar .fullcalendar .fc-toolbar .fc-button.fc-button-active
+    {
+        background: #082711 !important;
+        color: #73f16f;
+        border-color: #20441e;
+    }
+    .route-calendar .fullcalendar .fc-toolbar .fc-button:disabled
+    {
+        color: #fbfefb;
+        border-color: #20441e;
+    }
+    .route-calendar .fullcalendar .fc-toolbar .fc-button:disabled:hover
+    {
+        border-color: #20441e;
+    }
+
+    .btn-secondary:hover,
+    .route-calendar .fullcalendar .fc-toolbar .fc-button:hover
+    {
+        border-color: #20441e;
+        color: #73f16f
     }
 }
