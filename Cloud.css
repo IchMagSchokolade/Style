@@ -1,9 +1,11 @@
 /* ==UserStyle==
-@name           Hackerman
+@name           Hackerman by Daniel Lehmann
 @namespace      github.com/openstyles/stylus
-@version        1.0.10
+@version        1.0.11
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
+@supportURL     https://github.com/IchMagSchokolade/Style/issues
+@license        CC BY-NC
 ==/UserStyle== */
 @-moz-document url-prefix("https://brandenburg.cloud")
 {
