@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hackerman
 @namespace      github.com/openstyles/stylus
-@version        1.0.8
+@version        1.0.9
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 ==/UserStyle== */
@@ -953,5 +953,20 @@
     {
         color: #20441e;
         text-shadow: 0 0 5px, 0 0 10px
+    }
+
+    .page-item.active .page-link
+    {
+        color: #fbfefb;
+        background-color: #082711;
+        border-color: #73f16f;
+    }
+
+    .pagination .page-item.disabled .page-link,
+    .page-item [href]
+    {
+        color: #fbfefb;
+        background-color: #071807;
+        border-color: #73f16f;
     }
 }
