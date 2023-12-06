@@ -30,8 +30,6 @@
         background-color: rgba(255, 255, 255, 0);
         border: 1px solid rgba(0, 0, 0, 0);
     }
-
-
     #page-title
     {
         background-image: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000, #ffff00);
@@ -41,32 +39,25 @@
         -webkit-background-clip: text;
         width: max-content;
     }
-
     footer.small-footer .imprint .center
     {
         color: #fbfefb;
     }
-
-
     body header
     {
-
         background-image: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000, #ffff00);
         background-size: 700% 100%;
         box-shadow: none;
         animation: headerGradient 20s linear infinite;
     }
-
     label
     {
         color: #fbfefb;
     }
-
     body header #title .cloud-logo
     {
         margin-bottom: 8px;
     }
-
     body #loginarea input
     {
         /* login Felder*/
@@ -76,31 +67,26 @@
         color: #fbfefb;
         border: 1px solid #0c5330;
     }
-
     body #loginarea .btn
     {
         background-color: #0c532f41;
         border: 1px solid #0c5330;
         color: #fbfefb;
     }
-
     #submit-login
     {
         animation: colorPalette 5s linear infinite;
         font-size: 18px;
     }
-
     #submit-login:hover
     {
         animation: letterSpacing 5s linear infinite, colorPalette 5s linear infinite;
     }
-
     div.input-group-addon
     {
         background-color: #0c532f41;
         border: 1px solid #0c5330;
     }
-
     .chosen-container-active.chosen-with-drop .chosen-single
     {
         background-color: #082711;
@@ -110,7 +96,6 @@
     {
         color: #61db7d;
     }
-
     div.login-providers a.chosen-single
     {
         background-color: #082711;
@@ -121,19 +106,16 @@
     {
         color: #61db7d;
     }
-
     div.login-providers div.chosen-drop
     {
         background-color: #082711;
         border: 1px solid #0c5330;
         color: #fbfefb;
     }
-
     div.login-providers div.chosen-drop:hover
     {
         color: #61db7d;
     }
-
     .chosen-container .chosen-results li.highlighted
     {
         background: #61db7d;
@@ -148,16 +130,12 @@
     {
         background-color: #082711;
     }
-
-
     body #loginarea button
     {
         background-color: #082711;
         border: none;
         color: #fbfefb;
     }
-
-
     .h1,
     .h2,
     .h3,
@@ -177,13 +155,10 @@
         line-height: 1.1;
         color: #fbfefb;
     }
-
     .card-block
     {
         background-color: #071807;
     }
-
-
     @keyframes colorPalette
     {
         0%,
@@ -220,7 +195,6 @@
             color: #ff0000;
         }
     }
-
     @keyframes headerGradient
     {
         0%
@@ -232,7 +206,6 @@
             background-position: 0% 0%;
         }
     }
-
     @keyframes letterSpacing
     {
         0%
@@ -248,19 +221,15 @@
             letter-spacing: 0px;
         }
     }
-
-
     h1.h4.card-title
     {
         color: #fbfefb;
     }
-
     .navbar-nav .minimal-button .dropdown-toggle .fa,
     .navbar-nav .minimal-button .dropdown-toggle .mdi
     {
         color: #73f16f;
     }
-
     li
     {
         color: #fbfefb;
@@ -312,33 +281,27 @@
     {
         fill: #73f16f;
     }
-
     .navbar
     {
         border-radius: 0px;
         border-bottom: 1.5px solid #20441e;
     }
-
     a.list-content.text-only:hover
     {
         background: linear-gradient(to right, #103b10, #020902);
     }
-
     main#main-content.v-main.content
     {
         background: #020902;
     }
-
     .sticky[data-v-52a036e1]
     {
         background-color: transparent;
     }
-
     .v-application .secondary--text
     {
         color: #73f16f !important;
     }
-
     /* Teams Karten*/
     .sc-card
     {
@@ -372,25 +335,16 @@
     {
         background: #0a250a;
     }
-
     .center:after,
     .footer:after
     {
         color: #73f16f;
         background-color: hsla(118, 53%, 29%, .12);
         content: " Style by Daniel Lehmann (https://github.com/IchMagSchokolade)";
-
         font-size: 0.6rem;
         padding: 0.5rem;
         display: flow-root;
     }
-    .section-title::after
-    {
-        color: red;
-        padding-left: 1rem;
-        content: "Dieser Style ist noch in Entwicklung - dies ist eine Vorschauversion. Vielen Dank für Ihr Verständnis und Ihre Geduld! Feedback bitte an 09818610102020m@gmail.com, oder https://github.com/IchMagSchokolade/Style/issues";
-    }
-
     /*Teams Suchleiste*/
     .input-group .form-control:not(:first-child):not(:last-child),
     .input-group-addon:not(:first-child):not(:last-child),
@@ -410,7 +364,6 @@
         border-width: 1.5px;
         border-color: #20441e;
     }
-
     /*Gestellt Aufgaben Liste*/
     .card-block
     {
@@ -433,7 +386,6 @@
     {
         color: #fbfefb;
     }
-
     /*Im Aufgaben Tab*/
     .theme--light.v-application
     {
@@ -447,12 +399,10 @@
     {
         box-shadow: none;
     }
-
     .sidebar .top-sidebar
     {
         background: #020902;
     }
-
     h1.text-h3
     {
         background-image: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000, #ffff00);
@@ -463,7 +413,6 @@
         width: max-content;
         height: 44px;
     }
-
     .v-tab.v-tab
     {
         background: #020902;
@@ -471,38 +420,31 @@
         border: 1px solid #20441e;
         width: 1rem;
     }
-
     .v-application .primary--text
     {
         color: #73f16f !important;
     }
-
     .theme--light.v-text-field--solo > .v-input__control > .v-input__slot
     {
         background: #020902;
         border: 1px solid #20441e;
     }
-
     .v-text-field .v-label
     {
         color: #fbfefb;
     }
-
     .theme--light.v-list
     {
         background-color: #020902;
     }
-
     .v-list-item__content
     {
         color: #fbfefb;
     }
-
     .theme--light.v-application
     {
         color: #fbfefb;
     }
-
     .v-application .pb-16
     {
         background-color: #020902;
@@ -513,68 +455,56 @@
         border: 1px solid #20441e;
         color: #fbfefb;
     }
-
     .theme--light.v-expansion-panels .v-expansion-panel--disabled
     {
         color: #fbfefba6;
     }
-
     .v-application .pa-0
     {
         padding-left: 10px !important;
     }
-
     .theme--light.v-subheader
     {
         color: #fbfefb;
     }
-
     .theme--light.v-list-item:not(.v-list-item--disabled) .v-list-item__action-text,
     .theme--light.v-list-item:not(.v-list-item--disabled) .v-list-item__subtitle
     {
         color: #73f16f82;
     }
-
     .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled)
     {
         color: #fdfdfd;
     }
-
     #completed
     {
         background: #020902;
     }
-
     .wireframe-header.sticky
     {
         background-color: #020902;
     }
-
     /* Spezifische Aufgabe*/
     .section-homework .maintabs > .tab-links .tab-link
     {
         margin-top: 0;
     }
-
     .tab-links
     {
         border: 1.5px solid #20441e;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
     }
-
     .col-md-4
     {
         padding-bottom: 30px;
     }
-
     .tab-link.active
     {
         font-weight: 700;
         color: #fff !important;
         border-bottom: 4px solid #20441e;
     }
-
     .tab-link:focus,
     .tab-link:hover
     {
@@ -590,7 +520,6 @@
     {
         color: #fbfefb;
     }
-
     .section-homework .dates i.closed
     {
         color: #fbfefb;
@@ -601,45 +530,37 @@
         background-color: #0b2e0b26;
         border-color: #20441e;
     }
-
     .btn-secondary:hover
     {
         color: #73f16f;
         background-color: transparent;
         border-color: #20441e;
     }
-
     .files .card.file
     {
         color: #73f16f82;
     }
-
     .files .card.file:hover
     {
         background-color: transparent;
     }
-
     .card-block:hover
     {
         border-color: #fbfefb;
     }
-
     .assignment .description a
     {
         animation: colorPalette 5s linear infinite;
     }
-
     /* Abgabe*/
     .submissionLabel
     {
         color: #fbfefb;
     }
-
     .ck.ck-icon :not([fill])
     {
         color: #73f16f;
     }
-
     .ck.ck-editor__main > .ck-editor__editable
     {
         border-color: #20441e;
@@ -654,7 +575,6 @@
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-
     .ck.ck-toolbar > .ck-toolbar__items
     {
         background: #030f03;
@@ -663,7 +583,6 @@
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
     }
-
     .ck.ck-toolbar.ck-toolbar_grouping
     {
         background: transparent;
@@ -678,7 +597,6 @@
     {
         background: #20441e !important;
     }
-
     .ck.ck-button.ck-off.ck-button_with-text.ck-dropdown__button
     {
         color: #73f16f;
@@ -688,7 +606,6 @@
     {
         background-color: #73f16f1d;
     }
-
     .section-upload .form-files-storage,
     .section-upload .form-files-storage-disabled,
     .section-upload .form-upload
@@ -697,7 +614,6 @@
         border-color: #20441e;
         border-radius: 3rem;
     }
-
     .form-upload,
     .form-files-storage,
     .form-files-storage-disabled
@@ -707,31 +623,24 @@
             background: #73f16f1d !important;
         }
     }
-
     /*Kurse Tab*/
     .justify-center.mt-2.subtitle.mb-7
     {
         color: #fbfefb
     }
-
-
     /* 1Kurs*/
     .theme--light.v-card
     {
         background-color: #73f16f14 !important;
     }
-
-
     aside.nav-sidebar ul li a:not(.sc-branding).child-active
     {
         color: #73f16f;
     }
-
     aside.nav-sidebar ul li a:not(.sc-branding).active svg
     {
         fill: #73f16f !important;
     }
-
     .card-header
     {
         background-color: #0a250a;
@@ -740,17 +649,14 @@
     {
         background-color: #1c591c;
     }
-
     summary
     {
         color: #fbfefb8a;
     }
-
     a
     {
         color: #73f16f;
     }
-
     a:focus,
     a:hover
     {
@@ -760,7 +666,6 @@
     {
         color: #73f16f;
     }
-
     .directories .card.folder:hover
     {
         background-color: hsla(118, 53%, 29%, .12);
@@ -781,7 +686,6 @@
     {
         border-color: #20441e
     }
-
     .directories .card.folder .fa
     {
         color: #73f16f82;
@@ -828,7 +732,6 @@
     {
         border-bottom: 1px solid #73f16f;
     }
-
     .btn-primary
     {
         background-color: #061606;
@@ -854,12 +757,10 @@
         color: #991b0d;
         text-shadow: 0 0 10px #f00, 0 0 40px #e31e08a8;
     }
-
     .col-sm-12.text-center
     {
         text-shadow: 0 0 10px #73f16f, 0 0 40px #73f16f, 0 0 80px #73f16f;
     }
-
     .ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list,
     .ck.ck-dropdown .ck-dropdown__panel .ck-list.ck-rounded-corners
     {
@@ -888,7 +789,6 @@
     {
         color: #73f16f
     }
-
     .footer
     {
         color: #fbfefb !important
@@ -899,7 +799,6 @@
         font-size: 18px;
         padding-bottom: 10px
     }
-
     .dropdown-menu
     {
         background: #071807;
@@ -938,32 +837,27 @@
         background-color: #061606;
         border: 1px solid #20441e;
     }
-
     .justify-center.mt-2.subtitle.mb-5
     {
         color: #494949
     }
-
     .grey.lighten-2.chip-item.px-1.mr-1.mb-0
     {
         color: #73f16f;
         background-color: transparent !important;
         border: 1px dashed #20441e !important;
     }
-
     .assignment .more
     {
         color: #20441e;
         text-shadow: 0 0 5px, 0 0 10px
     }
-
     .page-item.active .page-link
     {
         color: #fbfefb;
         background-color: #082711;
         border-color: #73f16f;
     }
-
     .pagination .page-item.disabled .page-link,
     .page-item [href]
     {
@@ -971,7 +865,6 @@
         background-color: #071807;
         border-color: #73f16f;
     }
-
     .route-calendar .fullcalendar .fc-toolbar .fc-button
     {
         background: #071807 !important;
@@ -993,16 +886,26 @@
     {
         border-color: #20441e;
     }
-
     .btn-secondary:hover,
     .route-calendar .fullcalendar .fc-toolbar .fc-button:hover
     {
         border-color: #20441e;
         color: #73f16f
     }
-
     .parrot-text.parrot-default
     {
         color: #fbfefb
+    }
+    tbody tr
+    {
+        color: #73f16f
+    }
+    .fc-unthemed td.fc-today
+    {
+        background: #73f16f14
+    }
+    thead tr th span
+    {
+        color: #73f16f
     }
 }
