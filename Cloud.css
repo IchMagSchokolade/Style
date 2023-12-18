@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.0
+@version        1.1.1
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -9,26 +9,36 @@
 ==/UserStyle== */
 @-moz-document url-prefix("https://brandenburg.cloud")
 {
+    :root
+    {
+        --background: #020902;
+        --textr: #fbfefb;
+        --card-background: #020902;
+        --card-background-hover: #091e094f;
+        --borders: #20441e;
+    }
     body
     {
-        background-color: #020902 !important;
+        background-color: var(--background) !important;
     }
     p
     {
-        color: #fbfefb;
-    }
-    .card-block
-    {
-        /* Boxen um Dateien*/
-        background-color: #051414;
-        border: 2px solid;
-        border-radius: 10px;
-        border-color: #61db7d;
+        color: var(--text-color);
     }
     .card
     {
-        background-color: rgba(255, 255, 255, 0);
-        border: 1px solid rgba(0, 0, 0, 0);
+        background: transparent
+    }
+    .card-block
+    {
+        background-color: var(--card-background);
+        border: 2px solid;
+        border-radius: 10px;
+        border-color: var(--borders);
+    }
+    .card-block:hover
+    {
+        background-color: var(--card-background-hover)
     }
     #page-title
     {
@@ -41,7 +51,7 @@
     }
     footer.small-footer .imprint .center
     {
-        color: #fbfefb;
+        color: var(--text-color);
     }
     body header
     {
@@ -52,7 +62,7 @@
     }
     label
     {
-        color: #fbfefb;
+        color: var(--text-color);
     }
     body header #title .cloud-logo
     {
@@ -64,14 +74,14 @@
         font-size: 1rem;
         padding: .5rem;
         background-color: #0c532f41;
-        color: #fbfefb;
+        color: var(--text-color);
         border: 1px solid #0c5330;
     }
     body #loginarea .btn
     {
         background-color: #0c532f41;
         border: 1px solid #0c5330;
-        color: #fbfefb;
+        color: var(--text-color);
     }
     #submit-login
     {
@@ -154,10 +164,6 @@
         font-weight: 400;
         line-height: 1.1;
         color: #fbfefb;
-    }
-    .card-block
-    {
-        background-color: #071807;
     }
     @keyframes colorPalette
     {
@@ -364,11 +370,6 @@
         border-width: 1.5px;
         border-color: #20441e;
     }
-    /*Gestellt Aufgaben Liste*/
-    .card-block
-    {
-        background-color: #020902;
-    }
     .text-muted
     {
         color: #fbfefb !important;
@@ -544,10 +545,6 @@
     {
         background-color: transparent;
     }
-    .card-block:hover
-    {
-        border-color: #fbfefb;
-    }
     .assignment .description a
     {
         animation: colorPalette 5s linear infinite;
@@ -673,18 +670,6 @@
     .directories .card.folder:hover
     {
         box-shadow: none;
-    }
-    .card-block:hover
-    {
-        background: transparent
-    }
-    .card-block:hover
-    {
-        border-color: #20441e
-    }
-    .card-block
-    {
-        border-color: #20441e
     }
     .directories .card.folder .fa
     {
