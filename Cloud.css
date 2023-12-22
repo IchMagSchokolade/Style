@@ -12,7 +12,7 @@
     :root
     {
         --background: #020902;
-        --textr: #fbfefb;
+        --text: #fbfefb;
         --card-background: #020902;
         --card-background-hover: #091e094f;
         --borders: #20441e;
@@ -23,7 +23,7 @@
     }
     p
     {
-        color: var(--text-color);
+        color: var(--text);
     }
     .card
     {
@@ -51,7 +51,7 @@
     }
     footer.small-footer .imprint .center
     {
-        color: var(--text-color);
+        color: var(--text);
     }
     body header
     {
@@ -62,7 +62,7 @@
     }
     label
     {
-        color: var(--text-color);
+        color: var(--text);
     }
     body header #title .cloud-logo
     {
@@ -74,14 +74,14 @@
         font-size: 1rem;
         padding: .5rem;
         background-color: #0c532f41;
-        color: var(--text-color);
+        color: var(--text);
         border: 1px solid #0c5330;
     }
     body #loginarea .btn
     {
         background-color: #0c532f41;
         border: 1px solid #0c5330;
-        color: var(--text-color);
+        color: var(--text);
     }
     #submit-login
     {
