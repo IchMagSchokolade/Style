@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.2
+@version        1.1.3
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -12,12 +12,12 @@
         --background: #020902;
         --text: #fbfefb;
         --card-background: #020902;
-        --card-background-hover: #091e094f;
+        --card-background-hover: #030f03;
         --borders: #20441e;
         --primary: #73f16f;
-        --color2: #63d11c;
-        --color3: #12b10b;
-        --sublte-panel: #2571231f;
+        --color2: #1DE517;
+        --color3: #133e12;
+        --sublte-panel: #061606;
     }
     body {
         background-color: var(--background) !important;
@@ -26,7 +26,7 @@
     .footer:after {
         color: var(--primary);
         background-color: var(--sublte-panel);
-        content: " Style by Daniel Lehmann (https://github.com/IchMagSchokolade)";
+        content: "Style by Daniel Lehmann (https://github.com/IchMagSchokolade)";
         font-size: 0.6rem;
         padding: 0.5rem;
         display: flow-root;
@@ -50,15 +50,66 @@
         text-decoration: none;
     }
     /*=========
-    Login Field
+    Login Panel
     ===========*/
     form.login-form input {
         background-color: var(--sublte-panel);
+        border: 1px solid var(--borders);
     }
     form.login-form input:hover,
     form.login-form input:active,
     form.login-form input:focus {
         background-color: var(--sublte-panel);
+        filter: brightness(200%);
+    }
+    form.login-form input.form-control:focus,
+    form.login-form .btn-primary:active,
+    form.login-form .btn-primary:focus,
+    form.login-form .btn-primary:hover,
+    form.login-form .btn-primary:active:focus {
+        border: 1px solid var(--borders);
+        background-color: var(--sublte-panel);
+    }
+    form.login-form div.input-group-addon {
+        background: var(--sublte-panel);
+        border: 1px solid var(--borders);
+    }
+    form.login-form button {
+        background: var(--sublte-panel);
+        border: none;
+        color: var(--primary);
+        outline: none
+    }
+    form.login-form div.input-group-addon:hover,
+    form.login-form div.input-group-addon:active {
+        background: var(--sublte-panel);
+        filter: brightness(200%);
+    }
+    form.login-form#password {
+        border-right: none;
+    }
+    form.login-form buttom.btn-primary:focus {
+        border: 1px solid var(--borders);
+    }
+    form.login-form .btn-secondary {
+        border: 1px solid var(--borders);
+    }
+    form.login-form .btn-secondary:hover,
+    form.login-form .btn-secondary:focus {
+        background-color: var(--sublte-panel);
+        color: var(--primary);
+        filter: brightness(200%);
+        outline: none;
+    }
+    /*Mehr Optionen*/
+    form.login-form div.chosen-container-single .chosen-single {
+        background-color: var(--sublte-panel);
+        border: 1px solid var(--borders);
+        color: var(--color2)
+    }
+    form.login-form div.chosen-container-single .chosen-single:hover,
+    form.login-form div.chosen-container-single .chosen-single:focus,
+    form.login-form div.chosen-container-single .chosen-single:active {
         filter: brightness(200%);
     }
 }
