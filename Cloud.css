@@ -1,163 +1,177 @@
-/* ==UserStyle==
+    /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.6
+@version        1.1.7
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
 @license        CC BY-NC
 ==/UserStyle== */
-@-moz-document url-prefix("https://brandenburg.cloud") {
-    :root {
-        --background: #020902;
-        --text: #fbfefb;
-        --card-background: #020902;
-        --card-background-hover: #030f03;
-        --borders: #20441e;
-        --primary: #73f16f;
-        --color2: #03A9F4;
-        --color3: #FFD600;
-        --subtle-panel: #061606;
+    @-moz-document url-prefix("https://brandenburg.cloud") {
+        :root {
+            --background: #020902;
+            --text: #fbfefb;
+            --card-background: #020902;
+            --card-background-hover: #030f03;
+            --borders: #20441e;
+            --primary: #73f16f;
+            --color2: #03A9F4;
+            --color3: #FFD600;
+            --subtle-panel: #061606;
+        }
+        body {
+            background-color: var(--background) !important;
+        }
+        .cloud-logo {
+            filter: hue-rotate(159.1deg) brightness(268%);
+        }
+        section.card {
+            background-color: var(--card-background);
+            border: 1.5px solid var(--borders);
+            border-radius: 1rem;
+            color: var(--text)
+        }
+        section.card:hover {
+            background-color: var(--card-background-hover)
+        }
+        a {
+            color: var(--color2)
+        }
+        a:hover,
+        a:focus {
+            color: var(--color2);
+            filter: brightness(75%);
+            text-decoration: none;
+        }
+        h4 {
+            color: var(--primary);
+        }
+        header.mb-1.top-margin {
+            background: transparent;
+            border-bottom: 1.5px solid var(--borders);
+            box-shadow: none;
+            padding-bottom: 0.5rem;
+        }
+        /*=========
+        Login Panel
+        ===========*/
+        form.login-form input {
+            background-color: var(--subtle-panel);
+            border: 1px solid var(--borders);
+        }
+        form.login-form input:hover,
+        form.login-form input:active,
+        form.login-form input:focus {
+            background-color: var(--subtle-panel);
+            filter: brightness(200%);
+        }
+        form.login-form input.form-control:focus,
+        form.login-form .btn-primary:active,
+        form.login-form .btn-primary:focus,
+        form.login-form .btn-primary:hover,
+        form.login-form .btn-primary:active:focus {
+            border: 1px solid var(--borders);
+            background-color: var(--subtle-panel);
+        }
+        form.login-form div.input-group-addon {
+            background: var(--subtle-panel);
+            border: 1px solid var(--borders);
+        }
+        form.login-form button {
+            background: var(--subtle-panel);
+            border: none;
+            color: var(--primary);
+            outline: none
+        }
+        form.login-form div.input-group-addon:hover,
+        form.login-form div.input-group-addon:active {
+            background: var(--subtle-panel);
+            filter: brightness(200%);
+        }
+        form.login-form#password {
+            border-right: none;
+        }
+        form.login-form buttom.btn-primary:focus {
+            border: 1px solid var(--borders);
+        }
+        form.login-form .btn-secondary {
+            border: 1px solid var(--borders);
+        }
+        form.login-form .btn-secondary:hover,
+        form.login-form .btn-secondary:focus {
+            background-color: var(--subtle-panel);
+            color: var(--primary);
+            filter: brightness(200%);
+            outline: none;
+        }
+        /*Mehr Optionen*/
+        form.login-form div.chosen-container-single .chosen-single {
+            background-color: var(--subtle-panel);
+            border: 1px solid var(--borders);
+            color: var(--color2)
+        }
+        form.login-form div.chosen-container-single .chosen-single:hover,
+        form.login-form div.chosen-container-single .chosen-single:focus,
+        form.login-form div.chosen-container-single .chosen-single:active {
+            filter: brightness(200%);
+        }
+        form.login-form div.chosen-container .chosen-drop {
+            background-color: var(--subtle-panel);
+            border: 1px solid var(--borders);
+        }
+        form.login-form .chosen-container-single .chosen-search input[type="text"] {
+            border: 1px solid var(--borders);
+            background-color: var(--subtle-panel);
+            outline: none;
+        }
+        form.login-form .active-result {
+            color: var(--color2);
+            background: none;
+        }
+        form.login-form .active-result:hover,
+        form.login-form .active-result:focus {
+            color: var(--primary);
+            background: none;
+        }
+        form.login-form .active-result:active {
+            background: none
+        }
+        form.login-form .active-result.result-selected.result-highlighted {
+            background: none
+        }
+        /*=========
+        Alert
+        ===========*/
+        div.dropdown.minimal-button.open div.dropdown-menu {
+            background: var(--subtle-panel);
+            border: 1.5px solid var(--borders);
+            border-radius: 1rem;
+            color: var(--text);
+        }
+        .alert-button .alert-item {
+            border: none;
+        }
+        div.alert-date.text-nowrap.text-muted {
+            color: var(--color2) !important;
+        }
+        /*=========
+        Footer
+        ===========*/
+        body footer:not(.small-footer) {
+            background: var(--background);
+            border-top: 1.5px solid var(--borders);
+        }
+        .center:after,
+        .footer:after {
+            color: var(--primary);
+            background-color: var(--subtle-panel);
+            content: "Style by Daniel Lehmann (https://github.com/IchMagSchokolade)";
+            font-size: 0.6rem;
+            padding: 0.5rem;
+            display: flow-root;
+        }
+        footer#footer {
+            border-top: 1.5px solid var(--borders);
+            color: var(--text)
+        }
     }
-    body {
-        background-color: var(--background) !important;
-    }
-    .center:after,
-    .footer:after {
-        color: var(--primary);
-        background-color: var(--subtle-panel);
-        content: "Style by Daniel Lehmann (https://github.com/IchMagSchokolade)";
-        font-size: 0.6rem;
-        padding: 0.5rem;
-        display: flow-root;
-    }
-    section.card {
-        background-color: var(--card-background);
-        border: 1.5px solid var(--borders);
-        border-radius: 1rem;
-        color: var(--text)
-    }
-    section.card:hover {
-        background-color: var(--card-background-hover)
-    }
-    a {
-        color: var(--color2)
-    }
-    a:hover,
-    a:focus {
-        color: var(--color2);
-        filter: brightness(75%);
-        text-decoration: none;
-    }
-    h4 {
-        color: var(--primary);
-    }
-    header.mb-1.top-margin {
-        background: transparent;
-        border-bottom: 1.5px solid var(--borders);
-        box-shadow: none;
-        padding-bottom: 0.5rem;
-    }
-    /*=========
-    Login Panel
-    ===========*/
-    form.login-form input {
-        background-color: var(--subtle-panel);
-        border: 1px solid var(--borders);
-    }
-    form.login-form input:hover,
-    form.login-form input:active,
-    form.login-form input:focus {
-        background-color: var(--subtle-panel);
-        filter: brightness(200%);
-    }
-    form.login-form input.form-control:focus,
-    form.login-form .btn-primary:active,
-    form.login-form .btn-primary:focus,
-    form.login-form .btn-primary:hover,
-    form.login-form .btn-primary:active:focus {
-        border: 1px solid var(--borders);
-        background-color: var(--subtle-panel);
-    }
-    form.login-form div.input-group-addon {
-        background: var(--subtle-panel);
-        border: 1px solid var(--borders);
-    }
-    form.login-form button {
-        background: var(--subtle-panel);
-        border: none;
-        color: var(--primary);
-        outline: none
-    }
-    form.login-form div.input-group-addon:hover,
-    form.login-form div.input-group-addon:active {
-        background: var(--subtle-panel);
-        filter: brightness(200%);
-    }
-    form.login-form#password {
-        border-right: none;
-    }
-    form.login-form buttom.btn-primary:focus {
-        border: 1px solid var(--borders);
-    }
-    form.login-form .btn-secondary {
-        border: 1px solid var(--borders);
-    }
-    form.login-form .btn-secondary:hover,
-    form.login-form .btn-secondary:focus {
-        background-color: var(--subtle-panel);
-        color: var(--primary);
-        filter: brightness(200%);
-        outline: none;
-    }
-    /*Mehr Optionen*/
-    form.login-form div.chosen-container-single .chosen-single {
-        background-color: var(--subtle-panel);
-        border: 1px solid var(--borders);
-        color: var(--color2)
-    }
-    form.login-form div.chosen-container-single .chosen-single:hover,
-    form.login-form div.chosen-container-single .chosen-single:focus,
-    form.login-form div.chosen-container-single .chosen-single:active {
-        filter: brightness(200%);
-    }
-    form.login-form div.chosen-container .chosen-drop {
-        background-color: var(--subtle-panel);
-        border: 1px solid var(--borders);
-    }
-    form.login-form .chosen-container-single .chosen-search input[type="text"] {
-        border: 1px solid var(--borders);
-        background-color: var(--subtle-panel);
-        outline: none;
-    }
-    form.login-form .active-result {
-        color: var(--color2);
-        background: none;
-    }
-    form.login-form .active-result:hover,
-    form.login-form .active-result:focus {
-        color: var(--primary);
-        background: none;
-    }
-    form.login-form .active-result:active {
-        background: none
-    }
-    form.login-form .active-result.result-selected.result-highlighted {
-        background: none
-    }
-    /*=========
-    Alert
-    ===========*/
-    div.dropdown.minimal-button.open div.dropdown-menu {
-        background: var(--subtle-panel);
-        border: 1.5px solid var(--borders);
-        border-radius: 1rem;
-        color: var(--text);
-    }
-    .alert-button .alert-item {
-        border: none;
-    }
-    div.alert-date.text-nowrap.text-muted {
-        color: var(--color2) !important;
-    }
-}
