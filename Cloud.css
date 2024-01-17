@@ -23,7 +23,7 @@
             background-color: var(--background) !important;
         }
         .cloud-logo {
-            filter: hue-rotate(159.1deg) brightness(268%);
+            filter: invert(78%) sepia(85%) saturate(356%) hue-rotate(47deg) brightness(101%) contrast(96%);
         }
         section.card {
             background-color: var(--card-background);
@@ -138,6 +138,9 @@
         }
         form.login-form .active-result.result-selected.result-highlighted {
             background: none
+        }
+        section#loginarea h1 {
+            color: var(--primary);
         }
         /*=========
         Alert
