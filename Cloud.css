@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.4
+@version        1.1.5
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -15,8 +15,8 @@
         --card-background-hover: #030f03;
         --borders: #20441e;
         --primary: #73f16f;
-        --color2: #1DE517;
-        --color3: #133e12;
+        --color2: #03A9F4;
+        --color3: #FFD600;
         --subtle-panel: #061606;
     }
     body {
@@ -120,5 +120,19 @@
         border: 1px solid var(--borders);
         background-color: var(--subtle-panel);
         outline: none;
+    }
+    form.login-form .active-result{
+        color: var(--color2);
+        background: none;
+    }
+    form.login-form .active-result:hover,form.login-form .active-result:focus{
+        color: var(--primary);
+        background: none;
+    }
+    form.login-form .active-result:active{
+        background: none
+    }
+    form.login-form .active-result.result-selected.result-highlighted{
+        background: none
     }
 }
