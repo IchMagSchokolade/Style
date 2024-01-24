@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.8
+@version        1.1.9
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -23,7 +23,8 @@
     body {
         background-color: var(--background) !important;
     }
-    .cloud-logo {
+    .cloud-logo,
+    img.logo.logo-full {
         filter: invert(78%) sepia(85%) saturate(356%) hue-rotate(47deg) brightness(101%) contrast(96%);
     }
     section.card {
@@ -201,7 +202,8 @@
         color: var(--primary) !important;
         fill: var(--primary) !important;
     }
-    aside.sidebar nav.contents ul div li.list-item:hover {
+    aside.sidebar nav ul div li.list-item:hover,
+    aside.nav-sidebar ul li a:hover:not(.sc-branding) {
         filter: brightness(75%);
         background: linear-gradient(to right, var(--background), var(--color2))!important;
     }
