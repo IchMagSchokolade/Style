@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.9
+@version        1.1.10
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -13,6 +13,7 @@
         --text: #fbfefb;
         --card-background: #020902;
         --card-background-hover: #030f03;
+        --button-hover: #030f03;
         --borders: #20441e;
         --primary: #73f16f;
         --color2: #03A9F4;
@@ -45,8 +46,10 @@
         filter: brightness(75%);
         text-decoration: none;
     }
-    h4 {
-        color: var(--primary);
+    h4,
+    h2,
+    .h4 {
+        color: var(--primary) !important;
     }
     header.mb-1.top-margin {
         background: transparent;
@@ -196,15 +199,63 @@
         background: linear-gradient(to right, var(--background), var(--color2))!important;
         color: var(--primary) !important;
     }
+    aside.nav-sidebar ul li a:not(.sc-branding).active svg {
+        fill: var(--primary)
+    }
     aside.nav-sidebar ul li a:not(.ß),
     aside.sidebar nav.contents ul div li.list-item a,
     aside.sidebar nav.contents ul div li.list-item a span {
         color: var(--primary) !important;
         fill: var(--primary) !important;
     }
-    aside.sidebar nav ul div li.list-item:hover,
+    aside.sidebar nav ul div li.list-item:hover:not(ß):not(ß),
     aside.nav-sidebar ul li a:hover:not(.sc-branding) {
         filter: brightness(75%);
         background: linear-gradient(to right, var(--background), var(--color2))!important;
+    }
+    /*=========
+    Hauptseite
+    ===========*/
+    /*Hallo(Name)*/
+    @keyframes rainbow_animation {
+        0% {
+            background-position: 0% 82%
+        }
+        50% {
+            background-position: 50% 19%
+        }
+        100% {
+            background-position: 100% 82%
+        }
+    }
+    div.col-sm-12.text-center h2.h5.mb-1.mt-2 {
+        background: linear-gradient(to right, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent !important;
+        animation: rainbow_animation 6s linear infinite;
+        background-size: 50% 100%;
+    }
+    div.container-fluid article.sc-card.locationlink {
+        border: 1.5px solid var(--borders);
+        border-radius: 0.5rem;
+        box-shadow: none;
+    }
+    div.container-fluid article.sc-card.locationlink:hover {
+        border-radius: 1rem;
+        background: var(--card-background-hover);
+    }
+    div.container-fluid article.sc-card.locationlink div.sc-card-header {
+        color: var(--color2);
+    }
+    div.container-fluid article.sc-card.locationlink div.sc-card-body {
+        color: var(--text);
+    }
+    div.container-fluid article.sc-card.locationlink div.sc-card-footer a {
+        color: var(--color3);
+    }
+    div.container-fluid article.sc-card.locationlink div.sc-card-footer a:hover {
+        background: var(--button-hover);
+        border-radius: 0.5rem;
     }
 }
