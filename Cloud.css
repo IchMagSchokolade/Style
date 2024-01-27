@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.11
+@version        1.1.12
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -216,6 +216,9 @@
     /*=========
     Hauptseite
     ===========*/
+    a.dashboard-title:hover {
+        color: var(--primary);
+    }
     /*Hallo(Name)*/
     @keyframes rainbow_animation {
         0% {
@@ -265,5 +268,11 @@
         border: 1.5px solid var(--borders);
         border-radius: 0.5rem;
         transition: 0.3s;
+    }
+    div.card.card-block.homework-tile div.title-row {
+        color: var(--color2);
+    }
+    div.card.card-block.homework-tile div.text-muted span {
+        color: var(--color3);
     }
 }
