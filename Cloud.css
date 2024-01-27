@@ -1,11 +1,12 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.12
+@version        1.1.14
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
 @license        CC BY-NC
+@updateURL      https://raw.githubusercontent.com/IchMagSchokolade/Style/main/Cloud.css
 ==/UserStyle== */
 @-moz-document url-prefix("https://brandenburg.cloud") {
     :root {
@@ -48,7 +49,8 @@
     }
     h4,
     h2,
-    .h4 {
+    .h4,
+    h1 {
         color: var(--primary) !important;
     }
     header.mb-1.top-margin {
@@ -56,6 +58,16 @@
         border-bottom: 1.5px solid var(--borders);
         box-shadow: none;
         padding-bottom: 0.5rem;
+    }
+    
+    .nav-item.school-data.hidden-sm-down, div.school-name.item{
+        color: var(--color2);
+        font-size: 18px;
+    }
+    .btn.btn-secondary.btn-thin.dropdown-toggle.btn-create-qr,
+    .mdi.mdi-arrow-expand,
+    .mdi.mdi-help-circle-outline {
+        color: var(--primary);
     }
     /*=========
     Login Panel
@@ -193,6 +205,7 @@
     aside.sidebar {
         background: var(--background) !important;
         border-right: 1.5px solid var(--borders) !important;
+        box-shadow: none !important;
     }
     aside.nav-sidebar a.active,
     aside.sidebar nav.contents ul div li.list-item.active {
@@ -219,6 +232,7 @@
     a.dashboard-title:hover {
         color: var(--primary);
     }
+    
     /*Hallo(Name)*/
     @keyframes rainbow_animation {
         0% {
@@ -255,6 +269,7 @@
     div.container-fluid article.sc-card.locationlink div.sc-card-body {
         color: var(--text);
     }
+    
     div.container-fluid article.sc-card.locationlink div.sc-card-footer a {
         color: var(--color3);
     }
@@ -274,5 +289,32 @@
     }
     div.card.card-block.homework-tile div.text-muted span {
         color: var(--color3);
+    }
+    /*==========
+    Kurse Übersicht
+    ============*/
+    div.page {
+        background: var(--background);
+    }
+    .container.wireframe-container {
+        padding: 0 !important;
+    }
+    div.wireframe-header.sticky {
+        background: var(--card-background);
+        border: 1.5px solid var(--borders);
+        border-left: none;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    div.v-input__slot {
+        background: var(--card-background) !important;
+        box-shadow: none !important;
+        border: 1.5px solid var(--borders);
+    }
+    div.v-input__slot label.v-label {
+        color: var(--text);
+    }
+    div.v-input__slot svg.v-icon__svg {
+        fill: var(--text)
     }
 }
