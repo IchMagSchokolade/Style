@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.14
+@version        1.1.15
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -59,8 +59,8 @@
         box-shadow: none;
         padding-bottom: 0.5rem;
     }
-    
-    .nav-item.school-data.hidden-sm-down, div.school-name.item{
+    .nav-item.school-data.hidden-sm-down,
+    div.school-name.item {
         color: var(--color2);
         font-size: 18px;
     }
@@ -232,7 +232,6 @@
     a.dashboard-title:hover {
         color: var(--primary);
     }
-    
     /*Hallo(Name)*/
     @keyframes rainbow_animation {
         0% {
@@ -253,6 +252,20 @@
         animation: rainbow_animation 6s linear infinite;
         background-size: 50% 100%;
     }
+    div.dropdown.minimal-button.open a.btn.btn-secondary.btn-fullscreen,
+    body.fullscreen .btn-fullscreen {
+        background: var(--primary) !important;
+        color: var(--background) !important;
+        transition: none !important;
+    }
+    .btn-secondary.dropdown-toggle:focus,
+    .btn-secondary.dropdown-toggle:hover {
+        background: transparent !important;
+        color: var(--primary);
+    }
+    li.nav-item.qr-code-action div.dropdown div.print div.content.qr-show img {
+        filter: invert(79%) sepia(82%) saturate(377%) hue-rotate(55deg) brightness(101%) contrast(89%);
+    }
     /*Neuigkeiten Boxen*/
     div.container-fluid article.sc-card.locationlink {
         border: 1.5px solid var(--borders);
@@ -269,7 +282,6 @@
     div.container-fluid article.sc-card.locationlink div.sc-card-body {
         color: var(--text);
     }
-    
     div.container-fluid article.sc-card.locationlink div.sc-card-footer a {
         color: var(--color3);
     }
