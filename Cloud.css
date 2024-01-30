@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.15
+@version        1.1.16
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -169,7 +169,7 @@
     div.dropdown.minimal-button.open div.dropdown-menu {
         background: var(--subtle-panel);
         border: 1.5px solid var(--borders);
-        border-radius: 1rem;
+        border-radius: 0;
         color: var(--text);
     }
     .alert-button .alert-item {
@@ -197,6 +197,11 @@
     footer#footer {
         border-top: 1.5px solid var(--borders);
         color: var(--text)
+    }
+    footer div,
+    footer div a {
+        color: var(--color2) !important;
+        font-size: 18px;
     }
     /*==========
     Panel Rand Links
@@ -289,6 +294,28 @@
         background: var(--button-hover);
         border-radius: 0.5rem;
     }
+    div.dropdown-menu.print div.btn.btn-secondary.btn-print.mb-1.ml-1.mt-0 {
+        background: var(--card-background);
+        border: 1px solid var(--borders);
+        color: var(--color2);
+    }
+    .content.list-group {
+        background: var(--card-background);
+    }
+    .content.list-group li {
+        background: transparent;
+        border-bottom: 1.5px solid var(--borders);
+        fill: var(--color2)
+    }
+    .content.list-group li * {
+        fill: var(--color2);
+    }
+    .content.list-group li:last-of-type {
+        border: none;
+    }
+    .list-group-item:first-child {
+        border-radius: 0;
+    }
     /*Aufgaben*/
     div.card.card-block.homework-tile {
         background: var(--card-background);
@@ -328,5 +355,19 @@
     }
     div.v-input__slot svg.v-icon__svg {
         fill: var(--text)
+    }
+    div.btn a.v-btn.v-btn--outlined.v-btn--router.v-size--small.secondary--text {
+        border: 1px solid var(--borders);
+        color: var(--color2);
+    }
+    div.btn a.v-btn.v-btn--outlined.v-btn--router.v-size--small.secondary--text span {
+        color: var(--color2);
+    }
+    div.justify-center.mt-2.subtitle.mb-7 {
+        color: var(--text)
+    }
+    div.justify-center.mt-2.subtitle.mb-5 {
+        color: var(--text);
+        filter: brightness(50%);
     }
 }
