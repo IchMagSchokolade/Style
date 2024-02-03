@@ -1,373 +1,434 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.16
+@version        1.1.17
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
 @license        CC BY-NC
 @updateURL      https://raw.githubusercontent.com/IchMagSchokolade/Style/main/Cloud.css
 ==/UserStyle== */
-@-moz-document url-prefix("https://brandenburg.cloud") {
-    :root {
-        --background: #020902;
-        --text: #fbfefb;
-        --card-background: #020902;
-        --card-background-hover: #030f03;
-        --button-hover: #030f03;
-        --borders: #20441e;
-        --primary: #73f16f;
-        --color2: #03A9F4;
-        --color3: #FFD600;
-        --subtle-panel: #061606;
-        --subtle-text: #114b11;
-    }
-    body {
-        background-color: var(--background) !important;
-    }
-    .cloud-logo,
-    img.logo.logo-full {
-        filter: invert(78%) sepia(85%) saturate(356%) hue-rotate(47deg) brightness(101%) contrast(96%);
-    }
-    section.card {
-        background-color: var(--card-background);
-        border: 1.5px solid var(--borders);
-        border-radius: 1rem;
-        color: var(--text)
-    }
-    section.card:hover {
-        background-color: var(--card-background-hover)
-    }
-    a {
-        color: var(--color2)
-    }
-    a:hover,
-    a:focus {
-        color: var(--color2);
-        filter: brightness(75%);
-        text-decoration: none;
-    }
-    h4,
-    h2,
-    .h4,
-    h1 {
-        color: var(--primary) !important;
-    }
-    header.mb-1.top-margin {
-        background: transparent;
-        border-bottom: 1.5px solid var(--borders);
-        box-shadow: none;
-        padding-bottom: 0.5rem;
-    }
-    .nav-item.school-data.hidden-sm-down,
-    div.school-name.item {
-        color: var(--color2);
-        font-size: 18px;
-    }
-    .btn.btn-secondary.btn-thin.dropdown-toggle.btn-create-qr,
-    .mdi.mdi-arrow-expand,
-    .mdi.mdi-help-circle-outline {
-        color: var(--primary);
-    }
-    /*=========
-    Login Panel
-    ===========*/
-    form.login-form input {
-        background-color: var(--subtle-panel);
-        border: 1px solid var(--borders);
-        color: var(--subtle-text);
-    }
-    form.login-form input:hover,
-    form.login-form input:active,
-    form.login-form input:focus {
-        background-color: var(--subtle-panel);
-        filter: brightness(200%);
-    }
-    form.login-form input.form-control:focus,
-    form.login-form .btn-primary:active,
-    form.login-form .btn-primary:focus,
-    form.login-form .btn-primary:hover,
-    form.login-form .btn-primary:active:focus {
-        border: 1px solid var(--borders);
-        background-color: var(--subtle-panel);
-    }
-    form.login-form div.input-group-addon {
-        background: var(--subtle-panel);
-        border: 1px solid var(--borders);
-    }
-    form.login-form button {
-        background: var(--subtle-panel);
-        border: none;
-        color: var(--primary);
-        outline: none
-    }
-    form.login-form div.input-group-addon:hover,
-    form.login-form div.input-group-addon:active {
-        background: var(--subtle-panel);
-        filter: brightness(200%);
-    }
-    form.login-form#password {
-        border-right: none;
-    }
-    form.login-form buttom.btn-primary:focus {
-        border: 1px solid var(--borders);
-    }
-    form.login-form .btn-secondary {
-        border: 1px solid var(--borders);
-    }
-    form.login-form .btn-secondary:hover,
-    form.login-form .btn-secondary:focus {
-        background-color: var(--subtle-panel);
-        color: var(--primary);
-        filter: brightness(200%);
-        outline: none;
-    }
-    form.login-form .btn-primary {
-        color: var(--primary);
-    }
-    /*Mehr Optionen*/
-    form.login-form div.chosen-container-single .chosen-single {
-        background-color: var(--subtle-panel);
-        border: 1px solid var(--borders);
-        color: var(--color2)
-    }
-    form.login-form div.chosen-container-single .chosen-single:hover,
-    form.login-form div.chosen-container-single .chosen-single:focus,
-    form.login-form div.chosen-container-single .chosen-single:active {
-        filter: brightness(200%);
-    }
-    form.login-form div.chosen-container .chosen-drop {
-        background-color: var(--subtle-panel);
-        border: 1px solid var(--borders);
-    }
-    form.login-form .chosen-container-single .chosen-search input[type="text"] {
-        border: 1px solid var(--borders);
-        background-color: var(--subtle-panel);
-        outline: none;
-    }
-    form.login-form .active-result {
-        color: var(--color2);
-        background: none;
-    }
-    form.login-form .active-result:hover,
-    form.login-form .active-result:focus {
-        color: var(--primary);
-        background: none;
-    }
-    form.login-form .active-result:active {
-        background: none
-    }
-    form.login-form .active-result.result-selected.result-highlighted {
-        background: none
-    }
-    section#loginarea h1 {
-        color: var(--primary);
-    }
-    /*=========
-    Alert
-    ===========*/
-    div.dropdown.minimal-button.open div.dropdown-menu {
-        background: var(--subtle-panel);
-        border: 1.5px solid var(--borders);
-        border-radius: 0;
-        color: var(--text);
-    }
-    .alert-button .alert-item {
-        border: none;
-    }
-    div.alert-date.text-nowrap.text-muted {
-        color: var(--color2) !important;
-    }
-    /*=========
-    Footer
-    ===========*/
-    body footer:not(.small-footer) {
-        background: var(--background);
-        border-top: 1.5px solid var(--borders);
-    }
-    .center:after,
-    .footer:after {
-        color: var(--primary);
-        background-color: var(--subtle-panel);
-        content: "Style by Daniel Lehmann (https://github.com/IchMagSchokolade)";
-        font-size: 0.6rem;
-        padding: 0.5rem;
-        display: flow-root;
-    }
-    footer#footer {
-        border-top: 1.5px solid var(--borders);
-        color: var(--text)
-    }
-    footer div,
-    footer div a {
-        color: var(--color2) !important;
-        font-size: 18px;
-    }
-    /*==========
-    Panel Rand Links
-    ============*/
-    aside.nav-sidebar,
-    aside.sidebar {
-        background: var(--background) !important;
-        border-right: 1.5px solid var(--borders) !important;
-        box-shadow: none !important;
-    }
-    aside.nav-sidebar a.active,
-    aside.sidebar nav.contents ul div li.list-item.active {
-        background: linear-gradient(to right, var(--background), var(--color2))!important;
-        color: var(--primary) !important;
-    }
-    aside.nav-sidebar ul li a:not(.sc-branding).active svg {
-        fill: var(--primary)
-    }
-    aside.nav-sidebar ul li a:not(.ß),
-    aside.sidebar nav.contents ul div li.list-item a,
-    aside.sidebar nav.contents ul div li.list-item a span {
-        color: var(--primary) !important;
-        fill: var(--primary) !important;
-    }
-    aside.sidebar nav ul div li.list-item:hover:not(ß):not(ß),
-    aside.nav-sidebar ul li a:hover:not(.sc-branding) {
-        filter: brightness(75%);
-        background: linear-gradient(to right, var(--background), var(--color2))!important;
-    }
-    /*=========
-    Hauptseite
-    ===========*/
-    a.dashboard-title:hover {
-        color: var(--primary);
-    }
-    /*Hallo(Name)*/
-    @keyframes rainbow_animation {
-        0% {
-            background-position: 0% 82%
+    @-moz-document url-prefix("https://brandenburg.cloud") {
+        :root {
+            --background: #020902;
+            --text: #fbfefb;
+            --card-background: #020902;
+            --card-background-hover: #030f03;
+            --button-hover: #030f03;
+            --borders: #20441e;
+            --primary: #73f16f;
+            --color2: #03A9F4;
+            --color3: #FFD600;
+            --subtle-panel: #061606;
+            --subtle-text: #114b11;
         }
-        50% {
-            background-position: 50% 19%
+        body {
+            background-color: var(--background) !important;
         }
-        100% {
-            background-position: 100% 82%
+        .cloud-logo,
+        img.logo.logo-full {
+            filter: invert(78%) sepia(85%) saturate(356%) hue-rotate(47deg) brightness(101%) contrast(96%);
+        }
+        section.card {
+            background-color: var(--card-background);
+            border: 1.5px solid var(--borders);
+            border-radius: 1rem;
+            color: var(--text)
+        }
+        section.card:hover {
+            background-color: var(--card-background-hover)
+        }
+        a {
+            color: var(--color2)
+        }
+        a:hover,
+        a:focus {
+            color: var(--color2);
+            filter: brightness(75%);
+            text-decoration: none;
+        }
+        h4,
+        h2,
+        .h4,
+        h1 {
+            color: var(--primary) !important;
+        }
+        header.mb-1.top-margin {
+            background: transparent;
+            border-bottom: 1.5px solid var(--borders);
+            box-shadow: none;
+            padding-bottom: 0.5rem;
+        }
+        .nav-item.school-data.hidden-sm-down,
+        div.school-name.item {
+            color: var(--color2);
+            font-size: 18px;
+        }
+        .btn.btn-secondary.btn-thin.dropdown-toggle.btn-create-qr,
+        .mdi.mdi-arrow-expand,
+        .mdi.mdi-help-circle-outline,
+        svg.v-icon__svg,
+        .alert-button.danger i {
+            color: var(--primary);
+            fill: var(--primary);
+        }
+        /*Dropdown Name*/
+        .dropdown-menu.dropdown-menu-right {
+            background: var(--card-background);
+            border: 1.5px solid var(--borders);
+        }
+        .dropdown-menu.dropdown-menu-right div.dropdown-name {
+            color: var(--primary);
+        }
+        .navbar-nav .btn-avatar .dropdown-name {
+            border-bottom: 1.5px solid var(--borders);
+        }
+        a.dropdown-item:hover {
+            background: var(--card-background-hover);
+            filter: none;
+            color: var(--color2)
+        }
+        a.dropdown-item {
+            color: var(--color2);
+        }
+        /*=========
+        Login Panel
+        ===========*/
+        form.login-form input {
+            background-color: var(--subtle-panel);
+            border: 1px solid var(--borders);
+            color: var(--subtle-text);
+        }
+        form.login-form input:hover,
+        form.login-form input:active,
+        form.login-form input:focus {
+            background-color: var(--subtle-panel);
+            filter: brightness(200%);
+        }
+        form.login-form input.form-control:focus,
+        form.login-form .btn-primary:active,
+        form.login-form .btn-primary:focus,
+        form.login-form .btn-primary:hover,
+        form.login-form .btn-primary:active:focus {
+            border: 1px solid var(--borders);
+            background-color: var(--subtle-panel);
+        }
+        form.login-form div.input-group-addon {
+            background: var(--subtle-panel);
+            border: 1px solid var(--borders);
+        }
+        form.login-form button {
+            background: var(--subtle-panel);
+            border: none;
+            color: var(--primary);
+            outline: none
+        }
+        form.login-form div.input-group-addon:hover,
+        form.login-form div.input-group-addon:active {
+            background: var(--subtle-panel);
+            filter: brightness(200%);
+        }
+        form.login-form#password {
+            border-right: none;
+        }
+        form.login-form buttom.btn-primary:focus {
+            border: 1px solid var(--borders);
+        }
+        form.login-form .btn-secondary {
+            border: 1px solid var(--borders);
+        }
+        form.login-form .btn-secondary:hover,
+        form.login-form .btn-secondary:focus {
+            background-color: var(--subtle-panel);
+            color: var(--primary);
+            filter: brightness(200%);
+            outline: none;
+        }
+        form.login-form .btn-primary {
+            color: var(--primary);
+        }
+        /*Mehr Optionen*/
+        form.login-form div.chosen-container-single .chosen-single {
+            background-color: var(--subtle-panel);
+            border: 1px solid var(--borders);
+            color: var(--color2)
+        }
+        form.login-form div.chosen-container-single .chosen-single:hover,
+        form.login-form div.chosen-container-single .chosen-single:focus,
+        form.login-form div.chosen-container-single .chosen-single:active {
+            filter: brightness(200%);
+        }
+        form.login-form div.chosen-container .chosen-drop {
+            background-color: var(--subtle-panel);
+            border: 1px solid var(--borders);
+        }
+        form.login-form .chosen-container-single .chosen-search input[type="text"] {
+            border: 1px solid var(--borders);
+            background-color: var(--subtle-panel);
+            outline: none;
+        }
+        form.login-form .active-result {
+            color: var(--color2);
+            background: none;
+        }
+        form.login-form .active-result:hover,
+        form.login-form .active-result:focus {
+            color: var(--primary);
+            background: none;
+        }
+        form.login-form .active-result:active {
+            background: none
+        }
+        form.login-form .active-result.result-selected.result-highlighted {
+            background: none
+        }
+        section#loginarea h1 {
+            color: var(--primary);
+        }
+        /*=========
+        Alert
+        ===========*/
+        div.dropdown.minimal-button.open div.dropdown-menu {
+            background: var(--subtle-panel);
+            border: 1.5px solid var(--borders);
+            border-radius: 0;
+            color: var(--text);
+        }
+        .alert-button .alert-item {
+            border: none;
+        }
+        div.alert-date.text-nowrap.text-muted {
+            color: var(--color2) !important;
+        }
+        /*=========
+        Footer
+        ===========*/
+        body footer:not(.small-footer) {
+            background: var(--background);
+            border-top: 1.5px solid var(--borders);
+        }
+        .center:after,
+        .footer:after {
+            color: var(--primary);
+            background-color: var(--subtle-panel);
+            content: "Style by Daniel Lehmann (https://github.com/IchMagSchokolade)";
+            font-size: 0.6rem;
+            padding: 0.5rem;
+            display: flow-root;
+        }
+        footer#footer {
+            border-top: 1.5px solid var(--borders);
+            color: var(--text)
+        }
+        footer div,
+        footer div a {
+            color: var(--color2) !important;
+            font-size: 18px;
+        }
+        /*==========
+        Panel Rand Links
+        ============*/
+        aside.nav-sidebar,
+        aside.sidebar {
+            background: var(--background) !important;
+            border-right: 1.5px solid var(--borders) !important;
+            box-shadow: none !important;
+        }
+        aside.nav-sidebar a.active,
+        aside.sidebar nav.contents ul div li.list-item.active {
+            background: linear-gradient(to right, var(--background), var(--color2))!important;
+            color: var(--primary) !important;
+        }
+        aside.nav-sidebar ul li a:not(.sc-branding).active svg {
+            fill: var(--primary)
+        }
+        aside.nav-sidebar ul li a:not(.ß),
+        aside.sidebar nav.contents ul div li.list-item a,
+        aside.sidebar nav.contents ul div li.list-item a span {
+            color: var(--primary) !important;
+            fill: var(--primary) !important;
+        }
+        aside.sidebar nav ul div li.list-item:hover:not(ß):not(ß),
+        aside.nav-sidebar ul li a:hover:not(.sc-branding) {
+            filter: brightness(75%);
+            background: linear-gradient(to right, var(--background), var(--color2))!important;
+        }
+        /*=========
+        Hauptseite
+        ===========*/
+        a.dashboard-title:hover {
+            color: var(--primary);
+        }
+        /*Hallo(Name)*/
+        @keyframes rainbow_animation {
+            0% {
+                background-position: 0% 82%
+            }
+            50% {
+                background-position: 50% 19%
+            }
+            100% {
+                background-position: 100% 82%
+            }
+        }
+        div.col-sm-12.text-center h2.h5.mb-1.mt-2 {
+            background: linear-gradient(to right, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent !important;
+            animation: rainbow_animation 6s linear infinite;
+            background-size: 50% 100%;
+        }
+        div.dropdown.minimal-button.open a.btn.btn-secondary.btn-fullscreen,
+        body.fullscreen .btn-fullscreen {
+            background: var(--primary) !important;
+            color: var(--background) !important;
+            transition: none !important;
+        }
+        .btn-secondary.dropdown-toggle:focus,
+        .btn-secondary.dropdown-toggle:hover {
+            background: transparent !important;
+            color: var(--primary);
+        }
+        li.nav-item.qr-code-action div.dropdown div.print div.content.qr-show img {
+            filter: invert(79%) sepia(82%) saturate(377%) hue-rotate(55deg) brightness(101%) contrast(89%);
+        }
+        /*Neuigkeiten Boxen*/
+        div.container-fluid article.sc-card.locationlink {
+            border: 1.5px solid var(--borders);
+            border-radius: 0.5rem;
+            box-shadow: none;
+        }
+        div.container-fluid article.sc-card.locationlink:hover {
+            border-radius: 1rem;
+            background: var(--card-background-hover);
+        }
+        div.container-fluid article.sc-card.locationlink div.sc-card-header {
+            color: var(--color2);
+        }
+        div.container-fluid article.sc-card.locationlink div.sc-card-body {
+            color: var(--text);
+        }
+        div.container-fluid article.sc-card.locationlink div.sc-card-footer a {
+            color: var(--color3);
+        }
+        div.container-fluid article.sc-card.locationlink div.sc-card-footer a:hover {
+            background: var(--button-hover);
+            border-radius: 0.5rem;
+        }
+        div.dropdown-menu.print div.btn.btn-secondary.btn-print.mb-1.ml-1.mt-0 {
+            background: var(--card-background);
+            border: 1px solid var(--borders);
+            color: var(--color2);
+        }
+        .content.list-group {
+            background: var(--card-background);
+        }
+        .content.list-group li {
+            background: transparent;
+            border-bottom: 1.5px solid var(--borders);
+            fill: var(--color2)
+        }
+        .content.list-group li * {
+            fill: var(--color2);
+        }
+        .content.list-group li:last-of-type {
+            border: none;
+        }
+        .list-group-item:first-child {
+            border-radius: 0;
+        }
+        /*Aufgaben*/
+        div.card.card-block.homework-tile {
+            background: var(--card-background);
+            border: 1.5px solid var(--borders);
+            border-radius: 0.5rem;
+            transition: 0.3s;
+        }
+        div.card.card-block.homework-tile div.title-row {
+            color: var(--color2);
+        }
+        div.card.card-block.homework-tile div.text-muted span {
+            color: var(--color3);
+        }
+        /*==========
+        Kurse Übersicht
+        ============*/
+        div.page {
+            background: var(--background);
+        }
+        .container.wireframe-container {
+            padding: 0 !important;
+        }
+        div.wireframe-header.sticky {
+            background: var(--card-background);
+            border: 1.5px solid var(--borders);
+            border-left: none;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+        div.v-input__slot {
+            background: var(--card-background) !important;
+            box-shadow: none !important;
+            border: 1.5px solid var(--borders);
+        }
+        div.v-input__slot label.v-label {
+            color: var(--text);
+        }
+        div.v-input__slot svg.v-icon__svg {
+            fill: var(--text)
+        }
+        div.btn a.v-btn.v-btn--outlined.v-btn--router.v-size--small.secondary--text {
+            border: 1px solid var(--borders);
+            color: var(--color2);
+        }
+        div.btn a.v-btn.v-btn--outlined.v-btn--router.v-size--small.secondary--text span {
+            color: var(--color2);
+        }
+        div.justify-center.mt-2.subtitle.mb-7 {
+            color: var(--text)
+        }
+        div.justify-center.mt-2.subtitle.mb-5 {
+            color: var(--text);
+            filter: brightness(50%);
+        }
+        /*==========
+        1Kurs
+        ============*/
+        div.course-title {
+            color: var(--primary)
+        }
+        a.v-breadcrumbs__item {
+            color: var(--color2);
+            font-size: 18px;
+        }
+        div.wireframe-header.sticky svg {
+            fill: var(--color2);
+        }
+        div.btn a.back-button.v-btn.v-btn--outlined.secondary--text {
+            background: var(--card-background);
+            border: 1.5px solid var(--borders);
+        }
+        div.btn a.back-button.v-btn.v-btn--outlined.secondary--text:hover {
+            background: var(--button-hover);
+            filter: none !important;
+        }
+        div.btn a.back-button.v-btn.v-btn--outlined.secondary--text span {
+            color: var(--color2);
+        }
+        .theme--light.v-tabs > .v-tabs-bar {
+            background: var(--card-background);
+            border: 1.5px solid var(--borders);
+            border-top-right-radius: 0.5rem;
+            border-top-left-radius: 0.5rem;
+        }
+        .v-application .primary--text {
+            color: var(--borders) !important;
+        }
+        span.d-none.d-sm-inline {
+            color: var(--color2);
+        }
+        .v-tabs.tabs-max-width.v-tabs--grow.theme--light {
+            margin-left: -2rem;
         }
     }
-    div.col-sm-12.text-center h2.h5.mb-1.mt-2 {
-        background: linear-gradient(to right, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3, #ff2400);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent !important;
-        animation: rainbow_animation 6s linear infinite;
-        background-size: 50% 100%;
-    }
-    div.dropdown.minimal-button.open a.btn.btn-secondary.btn-fullscreen,
-    body.fullscreen .btn-fullscreen {
-        background: var(--primary) !important;
-        color: var(--background) !important;
-        transition: none !important;
-    }
-    .btn-secondary.dropdown-toggle:focus,
-    .btn-secondary.dropdown-toggle:hover {
-        background: transparent !important;
-        color: var(--primary);
-    }
-    li.nav-item.qr-code-action div.dropdown div.print div.content.qr-show img {
-        filter: invert(79%) sepia(82%) saturate(377%) hue-rotate(55deg) brightness(101%) contrast(89%);
-    }
-    /*Neuigkeiten Boxen*/
-    div.container-fluid article.sc-card.locationlink {
-        border: 1.5px solid var(--borders);
-        border-radius: 0.5rem;
-        box-shadow: none;
-    }
-    div.container-fluid article.sc-card.locationlink:hover {
-        border-radius: 1rem;
-        background: var(--card-background-hover);
-    }
-    div.container-fluid article.sc-card.locationlink div.sc-card-header {
-        color: var(--color2);
-    }
-    div.container-fluid article.sc-card.locationlink div.sc-card-body {
-        color: var(--text);
-    }
-    div.container-fluid article.sc-card.locationlink div.sc-card-footer a {
-        color: var(--color3);
-    }
-    div.container-fluid article.sc-card.locationlink div.sc-card-footer a:hover {
-        background: var(--button-hover);
-        border-radius: 0.5rem;
-    }
-    div.dropdown-menu.print div.btn.btn-secondary.btn-print.mb-1.ml-1.mt-0 {
-        background: var(--card-background);
-        border: 1px solid var(--borders);
-        color: var(--color2);
-    }
-    .content.list-group {
-        background: var(--card-background);
-    }
-    .content.list-group li {
-        background: transparent;
-        border-bottom: 1.5px solid var(--borders);
-        fill: var(--color2)
-    }
-    .content.list-group li * {
-        fill: var(--color2);
-    }
-    .content.list-group li:last-of-type {
-        border: none;
-    }
-    .list-group-item:first-child {
-        border-radius: 0;
-    }
-    /*Aufgaben*/
-    div.card.card-block.homework-tile {
-        background: var(--card-background);
-        border: 1.5px solid var(--borders);
-        border-radius: 0.5rem;
-        transition: 0.3s;
-    }
-    div.card.card-block.homework-tile div.title-row {
-        color: var(--color2);
-    }
-    div.card.card-block.homework-tile div.text-muted span {
-        color: var(--color3);
-    }
-    /*==========
-    Kurse Übersicht
-    ============*/
-    div.page {
-        background: var(--background);
-    }
-    .container.wireframe-container {
-        padding: 0 !important;
-    }
-    div.wireframe-header.sticky {
-        background: var(--card-background);
-        border: 1.5px solid var(--borders);
-        border-left: none;
-        padding-left: 2rem;
-        margin-bottom: 2rem;
-    }
-    div.v-input__slot {
-        background: var(--card-background) !important;
-        box-shadow: none !important;
-        border: 1.5px solid var(--borders);
-    }
-    div.v-input__slot label.v-label {
-        color: var(--text);
-    }
-    div.v-input__slot svg.v-icon__svg {
-        fill: var(--text)
-    }
-    div.btn a.v-btn.v-btn--outlined.v-btn--router.v-size--small.secondary--text {
-        border: 1px solid var(--borders);
-        color: var(--color2);
-    }
-    div.btn a.v-btn.v-btn--outlined.v-btn--router.v-size--small.secondary--text span {
-        color: var(--color2);
-    }
-    div.justify-center.mt-2.subtitle.mb-7 {
-        color: var(--text)
-    }
-    div.justify-center.mt-2.subtitle.mb-5 {
-        color: var(--text);
-        filter: brightness(50%);
-    }
-}
