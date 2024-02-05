@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.17
+@version        1.1.18
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -72,16 +72,32 @@
             color: var(--primary);
             fill: var(--primary);
         }
-        /*Dropdown Name*/
-        .dropdown-menu.dropdown-menu-right {
+        .dropdown-menu.dropdown-menu-right,
+        div.popuptext {
+            background: var(--card-background) !important;
+            border: 1.5px solid var(--borders) !important;
+        }
+        div.popuptext .theme--light.v-list {
             background: var(--card-background);
-            border: 1.5px solid var(--borders);
         }
-        .dropdown-menu.dropdown-menu-right div.dropdown-name {
+        div.popuptext div.v-list div.v-list-item {
+            color: var(--color2) !important;
+        }
+        div.popuptext div.v-list div.v-list-item svg {
+            fill: var(--color2);
+        }
+        div.popuptext a,
+        div.popuptext button.logout-button {
+            color: var(--color2) !important;
+        }
+        .dropdown-menu.dropdown-menu-right div.dropdown-name,
+        div.popuptext div.username {
             color: var(--primary);
+            font-size: 18px;
         }
-        .navbar-nav .btn-avatar .dropdown-name {
-            border-bottom: 1.5px solid var(--borders);
+        .navbar-nav .btn-avatar .dropdown-name,
+        div.popuptext div.username {
+            border-bottom: 1.5px solid var(--borders) !important;
         }
         a.dropdown-item:hover {
             background: var(--card-background-hover);
@@ -91,9 +107,6 @@
         a.dropdown-item {
             color: var(--color2);
         }
-        /*=========
-        Login Panel
-        ===========*/
         form.login-form input {
             background-color: var(--subtle-panel);
             border: 1px solid var(--borders);
@@ -147,7 +160,6 @@
         form.login-form .btn-primary {
             color: var(--primary);
         }
-        /*Mehr Optionen*/
         form.login-form div.chosen-container-single .chosen-single {
             background-color: var(--subtle-panel);
             border: 1px solid var(--borders);
@@ -185,14 +197,20 @@
         section#loginarea h1 {
             color: var(--primary);
         }
-        /*=========
-        Alert
-        ===========*/
-        div.dropdown.minimal-button.open div.dropdown-menu {
-            background: var(--subtle-panel);
-            border: 1.5px solid var(--borders);
-            border-radius: 0;
-            color: var(--text);
+        div.dropdown.minimal-button.open div.dropdown-menu,
+        div.popup-content.visible,
+        div.v-list.alerts.pa-0.rounded.v-sheet.elevation-2 {
+            background: var(--subtle-panel) !important;
+            border: 1.5px solid var(--borders) !important;
+            border-radius: 0 !important;
+            color: var(--text) !important;
+        }
+        div.v-list.alerts.pa-0.rounded.v-sheet.elevation-2 * {
+            color: var(--text) !important;
+        }
+        div.v-list.alerts.pa-0.rounded.v-sheet.elevation-2 div.text--secondary {
+            color: var(--color2) !important;
+            font-size: 14px !important;
         }
         .alert-button .alert-item {
             border: none;
@@ -200,9 +218,6 @@
         div.alert-date.text-nowrap.text-muted {
             color: var(--color2) !important;
         }
-        /*=========
-        Footer
-        ===========*/
         body footer:not(.small-footer) {
             background: var(--background);
             border-top: 1.5px solid var(--borders);
@@ -225,9 +240,6 @@
             color: var(--color2) !important;
             font-size: 18px;
         }
-        /*==========
-        Panel Rand Links
-        ============*/
         aside.nav-sidebar,
         aside.sidebar {
             background: var(--background) !important;
@@ -253,13 +265,9 @@
             filter: brightness(75%);
             background: linear-gradient(to right, var(--background), var(--color2))!important;
         }
-        /*=========
-        Hauptseite
-        ===========*/
         a.dashboard-title:hover {
             color: var(--primary);
         }
-        /*Hallo(Name)*/
         @keyframes rainbow_animation {
             0% {
                 background-position: 0% 82%
@@ -290,10 +298,10 @@
             background: transparent !important;
             color: var(--primary);
         }
-        li.nav-item.qr-code-action div.dropdown div.print div.content.qr-show img {
+        li.nav-item.qr-code-action div.dropdown div.print div.content.qr-show img,
+        div.popup-content.visible div.pa-4 div.qrcode img {
             filter: invert(79%) sepia(82%) saturate(377%) hue-rotate(55deg) brightness(101%) contrast(89%);
         }
-        /*Neuigkeiten Boxen*/
         div.container-fluid article.sc-card.locationlink {
             border: 1.5px solid var(--borders);
             border-radius: 0.5rem;
@@ -316,20 +324,29 @@
             background: var(--button-hover);
             border-radius: 0.5rem;
         }
-        div.dropdown-menu.print div.btn.btn-secondary.btn-print.mb-1.ml-1.mt-0 {
-            background: var(--card-background);
-            border: 1px solid var(--borders);
-            color: var(--color2);
+        div.dropdown-menu.print div.btn.btn-secondary.btn-print.mb-1.ml-1.mt-0,
+        div.popup-content div.pa-4 button {
+            background: var(--card-background) !important;
+            border: 1px solid var(--borders) !important;
+            color: var(--color2) !important;
+            font-size: 18px
         }
-        .content.list-group {
+        .content.list-group,
+        div.v-list.pa-0.menu-width.v-sheet {
             background: var(--card-background);
         }
-        .content.list-group li {
+        .content.list-group li,
+        div.v-list.pa-0.menu-width.v-sheet a {
             background: transparent;
             border-bottom: 1.5px solid var(--borders);
             fill: var(--color2)
         }
-        .content.list-group li * {
+        div.v-list.pa-0.menu-width.v-sheet a div.v-list-item__title.primary--text.link {
+            color: var(--color2) !important;
+        }
+        .content.list-group li *,
+        button.v-btn.v-btn--outlined.theme--light.v-size--default.secondary--text span svg,
+        div.v-list.pa-0.menu-width.v-sheet a svg {
             fill: var(--color2);
         }
         .content.list-group li:last-of-type {
@@ -338,7 +355,6 @@
         .list-group-item:first-child {
             border-radius: 0;
         }
-        /*Aufgaben*/
         div.card.card-block.homework-tile {
             background: var(--card-background);
             border: 1.5px solid var(--borders);
@@ -351,9 +367,6 @@
         div.card.card-block.homework-tile div.text-muted span {
             color: var(--color3);
         }
-        /*==========
-        Kurse Übersicht
-        ============*/
         div.page {
             background: var(--background);
         }
@@ -392,9 +405,6 @@
             color: var(--text);
             filter: brightness(50%);
         }
-        /*==========
-        1Kurs
-        ============*/
         div.course-title {
             color: var(--primary)
         }
