@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.19
+@version        1.1.20
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -17,6 +17,7 @@
         --button-hover: #030f03;
         --borders: #20441e;
         --primary: #73f16f;
+        --primary-muted: #1de716;
         --color2: #03A9F4;
         --color3: #FFD600;
         --subtle-panel: #061606;
@@ -463,5 +464,61 @@
     .theme--light.v-expansion-panels .v-expansion-panel {
         color: var(--primary);
         background-color: var(--card-background);
+    }
+    div.dates.text-muted {
+        color: var(--color2) !important;
+    }
+    div.homework div.assignment.row div p {
+        color: var(--text);
+    }
+    div.card-block.fileviewer {
+        background: var(--card-background);
+        border: 1.5px solid var(--borders);
+        border-radius: 0.5rem;
+    }
+    div.card-block.fileviewer:hover {
+        background: var(--card-background-hover);
+    }
+    div.card-block.fileviewer div {
+        color: var(--primary)
+    }
+    div.card.file[data-file-name] {
+        background: transparent;
+    }
+    div.card.file[data-file-name]:hover {
+        background: transparent;
+    }
+    div.card-block.fileviewer div.card-text button i {
+        color: var(--primary) !important;
+    }
+    div.tab-view.maintabs nav.nav a.tab-link.active {
+        color: var(--primary) !important;
+        border-color: var(--primary);
+    }
+    div.tab-view.maintabs nav.nav a.tab-link.active:hover {
+        filter: none;
+    }
+    div.tab-view.maintabs nav.nav a.tab-link {
+        color: var(--primary-muted);
+    }
+    div.tab-view.maintabs nav.nav a.tab-link:hover {
+        color: var(--primary) !important;
+        filter: none;
+    }
+    div.tab-view.maintabs nav.nav.tab-links {
+        border-bottom: 1px solid var(--borders);
+    }
+    div.pull-right a.btn.btn-secondary {
+        background: var(--card-background);
+        border: 1.5px solid var(--borders);
+        color: var(--color2);
+    }
+    div.description div.btn.btn-secondary {
+        background: var(--card-background);
+        border: 1.5px solid var(--borders);
+        color: var(--color2);
+    }
+    section#feedback.tab-content.section-homeworkdetails p {
+        color: var(--text);
     }
 }
