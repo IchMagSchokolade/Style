@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.20
+@version        1.1.21
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -227,7 +227,7 @@
     .footer:after {
         color: var(--primary);
         background-color: var(--subtle-panel);
-        content: "Style by Daniel Lehmann (https://github.com/IchMagSchokolade)";
+        content: "Style by Daniel Lehmann (https://github.com/IchMagSchokolade/Style)";
         font-size: 0.6rem;
         padding: 0.5rem;
         display: flow-root;
@@ -520,5 +520,40 @@
     }
     section#feedback.tab-content.section-homeworkdetails p {
         color: var(--text);
+    }
+    section.section-homework div.homework div.assignment.row div.description.col-xl-12.print {
+        color: var(--text);
+    }
+    ol.homework div.row li.card.assignment {
+        background: var(--card-background);
+        border: 1.5px solid var(--borders);
+    }
+    ol.homework div.row li.card.assignment div.dates {
+        color: var(--color2);
+    }
+    ol.homework div.row li.card.assignment div.description {
+        color: var(--text);
+    }
+    ol.homework div.row li.card.assignment span.more {
+        color: var(--color3);
+    }
+    div.row.card-deck-row div.sc-card-wrapper.col-md-6.col-sm-6.col-xs-12 article {
+        box-shadow: none;
+        border: 1.5px solid var(--borders);
+        border-radius: 0.5rem;
+    }
+    div.row.card-deck-row div.sc-card-wrapper.col-md-6.col-sm-6.col-xs-12 article div.sc-card-header {
+        background: var(--subtle-panel) !important;
+        color: var(--primary-muted);
+        font-weight: bold;
+    }
+    div.row.card-deck-row div.sc-card-wrapper.col-md-6.col-sm-6.col-xs-12 article div.sc-card-body {
+        color: var(--text);
+    }
+    div.row.card-deck-row div.sc-card-wrapper.col-md-6.col-sm-6.col-xs-12 article div.sc-card-footer a {
+        color: transparent;
+    }
+    div.row.card-deck-row div.sc-card-wrapper.col-md-6.col-sm-6.col-xs-12 article div.sc-card-footer a:hover {
+        background: transparent;
     }
 }
