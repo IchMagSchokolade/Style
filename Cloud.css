@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.21
+@version        1.1.22
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -555,5 +555,30 @@
     }
     div.row.card-deck-row div.sc-card-wrapper.col-md-6.col-sm-6.col-xs-12 article div.sc-card-footer a:hover {
         background: transparent;
+    }
+    .section-upload .form-upload {
+        background: var(--card-background);
+        border: 4px dashed var(--color2);
+        border-radius: 0.5rem;
+    }
+    .section-upload .form-upload div span.text-muted {
+        color: var(--text) !important;
+    }
+    .section-upload .form-upload.dz-drag-hover.focus {
+        background: transparent;
+        backdrop-filter: brightness(400%);
+    }
+    h3.h6 {
+        color: var(--text);
+    }
+    section.directories div.row div.col-xs-12 button.card.card-block.folder {
+        background: var(--card-background);
+        border: 1px solid var(--borders);
+    }
+    section.directories div.row div.col-xs-12 button.card.card-block.folder:hover {
+        box-shadow: none;
+    }
+    section.directories div.row div.col-xs-12 button.card.card-block.folder * {
+        color: var(--primary)!important;
     }
 }
