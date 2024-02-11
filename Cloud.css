@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.22
+@version        1.1.23
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -580,5 +580,32 @@
     }
     section.directories div.row div.col-xs-12 button.card.card-block.folder * {
         color: var(--primary)!important;
+    }
+    div.pull-right.personal-files-filter div#sortBy_chosen a {
+        background: var(--card-background) !important;
+        border: 1px solid var(--borders) !important;
+    }
+    div.pull-right.personal-files-filter div#sortBy_chosen a span {
+        color: var(--color2);
+    }
+    div.pull-right.personal-files-filter div#sortBy_chosen a div b {
+        filter: invert(59%) sepia(53%) saturate(6148%) hue-rotate(170deg) brightness(103%) contrast(98%);
+    }
+    div.pull-right.personal-files-filter div#sortBy_chosen div.chosen-drop {
+        background: var(--subtle-panel);
+        border: 1px solid var(--borders);
+    }
+    div.pull-right.personal-files-filter div#sortBy_chosen div.chosen-drop ul li {
+        color: var(--text);
+    }
+    div.pull-right.personal-files-filter div#sortBy_chosen div.chosen-drop ul li.highlighted {
+        background: var(--card-background-hover);
+    }
+    div.pull-right.personal-files-filter div button#sortButton {
+        background: var(--card-background) !important;
+        border: 1px solid var(--borders) !important;
+    }
+    div.pull-right.personal-files-filter div button#sortButton i.fa {
+        color: var(--color2) !important;
     }
 }
