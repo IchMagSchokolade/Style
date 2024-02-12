@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.1.23
+@version        1.1.24
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -607,5 +607,33 @@
     }
     div.pull-right.personal-files-filter div button#sortButton i.fa {
         color: var(--color2) !important;
+    }
+    div.container nav.pagination-wrapper ul a {
+        background: var(--card-background) !important;
+        border: 1px solid var(--borders) !important;
+        color: var(--text) !important;
+    }
+    div.container nav.pagination-wrapper ul a span.text-muted {
+        color: var(--text) !important;
+    }
+    div.container nav.pagination-wrapper ul li.page-item.active a.page-link {
+        background: var(--subtle-panel) !important;
+    }
+    form.search-wrapper div.input-group.input-group-sm input#search-box.form-control,
+    div#searchBar div.input-group.input-group-sm input {
+        background: var(--card-background);
+        border: 1px solid var(--borders);
+    }
+    span.input-group-btn button.btn.btn-secondary {
+        background: var(--card-background);
+        border: 1px solid var(--borders);
+        color: var(--text);
+    }
+    div.row div.col-sm-6 p {
+        color: var(--text);
+    }
+    div.sc-card-header span.sc-card-title div span.title {
+        color: var(--card-background) !important;
+        font-weight: bold;
     }
 }
