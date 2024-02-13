@@ -8,3 +8,5 @@ https://userstyles.world/style/13089/
 >  - https://schulen-ffedu.de
 >  - https://gauss-gymnasium.de/gawo/
 >  - https://efc.ibs6.de
+
+If a website updates and the Style breaks, please create an issue and I will update the Style as soon as possible.
