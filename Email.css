@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for schulen-ffedu.de
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        0.0.1
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -26,7 +26,7 @@
         border: 0.1em solid var(--input-field-borders);
         color: var(--text)
     }
-    input.form-control:focus {
+    input.form-control:focus:active {
         color: var(--text);
     }
     .input-group-text {
