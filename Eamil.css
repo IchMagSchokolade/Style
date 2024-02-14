@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name           Hackerman by Daniel Lehmann for schulen-ffedu.de
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Hackerman
+@author         Daniel Lehmann (https://github.com/IchMagSchokolade)
+@supportURL     https://github.com/IchMagSchokolade/Style/issues
+@license        CC BY-NC
+==/UserStyle== */
+@-moz-document domain("schulen-ffedu.de") {
+    :root {
+        --primary: #73f16f;
+        --secondary: #ac1616;
+        --background: #020902;
+        --text: #fbfefb;
+        --borders: #20441e;
+        --input-field-background: #020902;
+        --input-field-borders: #21531f
+    }
+    /*Login Page*/
+    #layout-content {
+        background-color: var(--background)
+    }
+    input.form-control {
+        background-color: var(--input-field-background);
+        border: 0.1em solid var(--input-field-borders);
+        color: var(--text)
+    }
+    input.form-control:focus {
+        color: var(--text);
+    }
+    .input-group-text {
+        background: var(--background);
+        border: 0.1em solid var(--input-field-borders);
+        color: var(--secondary)
+    }
+}
