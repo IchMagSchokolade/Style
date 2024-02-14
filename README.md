@@ -7,6 +7,7 @@ https://userstyles.world/style/13089/
 > planned:
 >  - https://gauss-gymnasium.de/gawo/
 >  - https://efc.ibs6.de
+>  - https://mallig.eduvinet.de/
 >
 > in development:
 >  - https://schulen-ffedu.de
