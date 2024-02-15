@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for schulen-ffedu.de
 @namespace      github.com/openstyles/stylus
-@version        0.0.1
+@version        0.0.2
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -9,29 +9,74 @@
 ==/UserStyle== */
 @-moz-document domain("schulen-ffedu.de") {
     :root {
-        --primary: #73f16f;
-        --secondary: #ac1616;
         --background: #020902;
         --text: #fbfefb;
+        --card-background: #020902;
+        --card-background-hover: #030f03;
+        --button-hover: #030f03;
         --borders: #20441e;
-        --input-field-background: #020902;
-        --input-field-borders: #21531f
+        --primary: #73f16f;
+        --primary-muted: #1de716;
+        --color2: #03A9F4;
+        --color3: #FFD600;
+        --subtle-panel: #061606;
+        --subtle-text: #114b11;
     }
-    /*Login Page*/
+    form#login-form {
+        width: max-content;
+        max-width: max-content;
+    }
     #layout-content {
         background-color: var(--background)
     }
     input.form-control {
-        background-color: var(--input-field-background);
-        border: 0.1em solid var(--input-field-borders);
+        background-color: var(--subtle-panel);
+        border: 1px solid var(--borders);
         color: var(--text)
     }
-    input.form-control:focus:active {
+    input.form-control::placeholder {
+        color: var(--text)
+    }
+    input.form-control:focus,
+    input.form-control:hover {
         color: var(--text);
+        background: var(--subtle-panel);
+        box-shadow: none;
+        border: 1px solid var(--borders);
+        filter: brightness(200%)
     }
     .input-group-text {
-        background: var(--background);
-        border: 0.1em solid var(--input-field-borders);
-        color: var(--secondary)
+        background: var(--subtle-panel);
+        border: 1px solid var(--borders);
+        color: var(--color2);
+    }
+    .input-group-text:hover {
+        filter: brightness(200%);
+    }
+    p.formbuttons button#rcmloginsubmit {
+        background: var(--subtle-panel);
+        border: 1px solid var(--borders);
+    }
+    p.formbuttons button#rcmloginsubmit:active:focus,
+    p.formbuttons button#rcmloginsubmit:hover,
+    p.formbuttons button#rcmloginsubmit:focus {
+        box-shadow: none;
+        filter: brightness(200%)
+    }
+    div#login-footer {
+        color: var(--text)
+    }
+    div#login-footer a {
+        color: var(--color2);
+    }
+    body,
+    #layout-sidebar,
+    #layout-menu,
+    #layout-menu .popover-header,
+    #taskmenu .special-buttons,
+    #layout > div > .footer,
+    .message,
+    .header {
+        background: var(--background) !important
     }
 }
