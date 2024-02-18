@@ -1,0 +1,46 @@
+/* ==UserStyle==
+@name           Better GaWo
+@namespace      github.com/openstyles/stylus
+@version        0.0.1
+@description    Style for GaWo
+@author         Daniel Lehmann (https://github.com/IchMagSchokolade)
+@supportURL     https://github.com/IchMagSchokolade/Style/issues
+@license        CC BY-NC
+==/UserStyle== */
+@-moz-document url-prefix("https://gauss-gymnasium.de/gawo") {
+    :root {
+        --background: #040D12;
+        --color1: #183D3D;
+        --color2: #5C8374;
+        --color3: #93B1A6;
+        --text: #f2faf7;
+    }
+    #wrapper {
+        width: 90%;
+        background: var(--background);
+    }
+    body,
+    #content {
+        background: var(--background);
+    }
+    .shadow {
+        box-shadow: none;
+    }
+    #footer {
+        color: var(--color3)
+    }
+    #usernav a,
+    #nav a {
+        color: var(--color2) !important
+    }
+    div#main h1 {
+        color: var(--color1);
+    }
+    div#main {
+        color: var(--text);
+    }
+    div#sidebar h3 {
+        background: var(--background);
+        color: var(--color2);
+    }
+}
