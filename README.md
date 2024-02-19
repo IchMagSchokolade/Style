@@ -10,6 +10,7 @@ https://userstyles.world/style/13089/
 >  - https://mallig.eduvinet.de/
 >
 > in development:
+>  - brandenburg.cloud
 >  - https://schulen-ffedu.de
 >  - https://gauss-gymnasium.de/gawo/
 
