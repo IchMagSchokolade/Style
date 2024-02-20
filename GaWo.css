@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Better GaWo
 @namespace      github.com/openstyles/stylus
-@version        0.0.1
+@version        0.0.2
 @description    Style for GaWo
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -10,6 +10,8 @@
 @-moz-document url-prefix("https://gauss-gymnasium.de/gawo") {
     :root {
         --background: #040D12;
+        --background-lighter: hsl(201, 64%, 8%);
+        --borders: hsl(201, 64%, 14%);
         --color1: #183D3D;
         --color2: #5C8374;
         --color3: #93B1A6;
@@ -33,8 +35,16 @@
     #nav a {
         color: var(--color2) !important
     }
-    div#main h1 {
+    #usernav {
+        left: 30%;
+    }
+    #nav {
+        left: 50% !important;
+    }
+    #main h1,
+    #main h2 {
         color: var(--color1);
+        border: none;
     }
     div#main {
         color: var(--text);
@@ -42,5 +52,61 @@
     div#sidebar h3 {
         background: var(--background);
         color: var(--color2);
+    }
+    .success {
+        background: var(--background-lighter);
+        color: var(--color1);
+        border: 1.5px solid var(--borders);
+    }
+    input[type="text"],
+    select,
+    input[type="submit"],
+    .submit {
+        text-shadow: none;
+        background: var(--background-lighter);
+        color: var(--color2);
+        border: 1.5px solid var(--borders);
+    }
+    input[type="submit"]:hover,
+    select:hover,
+    input[type="text"]:hover,
+    .submit:hover {
+        border-color: var(--borders);
+        filter: brightness(200%);
+    }
+    #sidebar ul li a {
+        color: var(--color3);
+    }
+    #sidebar ul li::marker {
+        color: var(--color3);
+    }
+    .veranst_half {
+        background: var(--background-lighter);
+        border-bottom: 2px solid var(--borders);
+        border-top: 2px solid var(--borders);
+    }
+    .flag {
+        border-top: 1px solid var(--borders);
+        background: var(--background-lighter) !important;
+    }
+    .teilnehmerliste,
+    .betreuerliste {
+        background: var(--background-lighter);
+    }
+    .betreuerliste {
+        border-bottom: 2px solid var(--borders);
+        margin-bottom: 0;
+    }
+    .notice {
+        background: var(--background-lighter);
+    }
+    h3.hd {
+        background: var(--background-lighter);
+        border-bottom: 2px solid var(--borders);
+    }
+    #wrapper {
+        justify-content: center;
+        align-content: center;
+        display: grid;
     }
 }
