@@ -2,7 +2,7 @@
 
 stylus for Firefox: https://addons.mozilla.org/en-GB/firefox/addon/styl-us/
 
-Cloud (htts://brandenburg.cloud):
+Cloud (https://brandenburg.cloud):
 https://userstyles.world/style/13089
 
 GaWo (https://gauss-gymnasium.de/gawo/):
