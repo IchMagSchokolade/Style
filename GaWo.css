@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Better GaWo
 @namespace      github.com/openstyles/stylus
-@version        0.0.2
+@version        0.0.3
 @description    Style for GaWo
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -29,7 +29,7 @@
         box-shadow: none;
     }
     #footer {
-        color: var(--color3)
+        color: var(--color3);
     }
     #usernav a,
     #nav a {
@@ -53,9 +53,10 @@
         background: var(--background);
         color: var(--color2);
     }
-    .success {
+    .success,
+    .error {
         background: var(--background-lighter);
-        color: var(--color1);
+        color: var(--color1) !important;
         border: 1.5px solid var(--borders);
     }
     input[type="text"],
@@ -108,5 +109,31 @@
         justify-content: center;
         align-content: center;
         display: grid;
+    }
+    .pagination {
+        background: var(--background);
+    }
+    .pagination a {
+        background: var(--background-lighter);
+        color: var(--color2);
+    }
+    .pagination .currentpage {
+        color: var(--color1) !important;
+        border: none;
+    }
+    .suchdiv {
+        border: 1.5px solid var(--borders);
+    }
+    .vdetails {
+        background: var(--background-lighter);
+    }
+    .suchdiv .vkarte_bestellen a {
+        color: var(--color2) !important
+    }
+    .suchdiv h4 a {
+        color: var(--color2)
+    }
+    .suchdiv h4 a:hover {
+        color: var(--color1)
     }
 }
