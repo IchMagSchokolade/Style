@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Better GaWo
 @namespace      github.com/openstyles/stylus
-@version        0.0.3
+@version        0.0.4
 @description    Style for GaWo
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -10,8 +10,8 @@
 @-moz-document url-prefix("https://gauss-gymnasium.de/gawo") {
     :root {
         --background: #040D12;
-        --background-lighter: hsl(201, 64%, 8%);
-        --borders: hsl(201, 64%, 14%);
+        --background-lighter: #071821;
+        --borders: #0d2b3b;
         --color1: #183D3D;
         --color2: #5C8374;
         --color3: #93B1A6;
@@ -30,6 +30,9 @@
     }
     #footer {
         color: var(--color3);
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
     #usernav a,
     #nav a {
@@ -57,6 +60,11 @@
     .error {
         background: var(--background-lighter);
         color: var(--color1) !important;
+        border: 1.5px solid var(--borders);
+    }
+    .hoverdiv{
+        background: var(--background-lighter);
+        color: var(--color2) !important;
         border: 1.5px solid var(--borders);
     }
     input[type="text"],
@@ -135,5 +143,29 @@
     }
     .suchdiv h4 a:hover {
         color: var(--color1)
+    }
+    .v_sep {
+        height: 2px;
+        background: var(--borders);
+        margin-bottom: 20px
+    }
+    .detailsdiv {
+        background: var(--background);
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #nav li a:hover,
+    #usernav li a:hover {
+        background: var(--background-lighter);
+        border: none;
+    }
+    th{
+        background: var(--background-lighter);
+        border: 1px solid var(--borders)
+    }
+    .ptlist td{
+        border: 1px solid var(--borders);
     }
 }
