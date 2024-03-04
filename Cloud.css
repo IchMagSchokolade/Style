@@ -1,7 +1,7 @@
     /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for brandenburg.cloud
 @namespace      github.com/openstyles/stylus
-@version        1.2.1
+@version        1.2.2
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -762,4 +762,7 @@
     		border: 1.5px solid var(--borders) !important;
     		border-top: none !important;
     	}
+		div.ck-content-homework span[style]{
+			background: var(--subtle-text) !important;
+		}
     }
