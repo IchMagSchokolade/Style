@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Better GaWo
 @namespace      github.com/openstyles/stylus
-@version        0.0.5
+@version        0.0.6
 @description    Style for GaWo
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -176,5 +176,16 @@
     }
     textarea {
         border: 1px solid var(--borders);
+    }
+    .tabs li a {
+        background: var(--background-lighter);
+        color: var(--color2);
+        background-image: none !important;
+        padding: 0.5em;
+        border: 1.5px solid var(--borders);
+    }
+    .tabs li a:hover {
+        text-decoration: none;
+        filter: brightness(200%);
     }
 }
