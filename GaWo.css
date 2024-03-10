@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Better GaWo
 @namespace      github.com/openstyles/stylus
-@version        0.0.6
+@version        0.0.7
 @description    Style for GaWo
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -33,6 +33,9 @@
         position: fixed;
         bottom: 0;
         left: 0;
+    }
+    a:hover {
+        text-decoration: none;
     }
     #usernav a,
     #nav a {
@@ -187,5 +190,23 @@
     .tabs li a:hover {
         text-decoration: none;
         filter: brightness(200%);
+    }
+    .systemmeldungen li {
+        background: var(--background-lighter);
+        border-bottom: 1.5px solid var(--borders);
+    }
+    .systemmeldungen li a {
+        color: var(--color3);
+    }
+    .systemmeldungen li:hover {
+        filter: brightness(200%);
+    }
+    .comment {
+        background: var(--background-lighter);
+        border: 2px solid var(--borders);
+        border-radius: 0.5em
+    }
+    .comment span {
+        color: var(--color2);
     }
 }
