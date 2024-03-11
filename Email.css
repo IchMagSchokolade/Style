@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hackerman by Daniel Lehmann for schulen-ffedu.de
 @namespace      github.com/openstyles/stylus
-@version        0.0.3
+@version        0.0.4
 @description    Hackerman
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
@@ -109,5 +109,12 @@
     .menu.toolbar span.special-buttons a,
     #layout-list {
         border-right: 1.5px solid var(--borders) !important;
+    }
+    .searchbar {
+        background: var(--card-background);
+        border-bottom: 1.5px solid var(--borders);
+    }
+    .searchbar input {
+        color: var(--text);
     }
 }
