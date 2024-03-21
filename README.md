@@ -3,10 +3,9 @@ Theme(s) for stylus by me
 stylus for Firefox: https://addons.mozilla.org/en-GB/firefox/addon/styl-us/
 
 
-Cloud (https://brandenburg.cloud):
-https://userstyles.world/style/13089  
-GaWo (https://gauss-gymnasium.de/gawo/):
-https://userstyles.world/style/14913
+Cloud (https://brandenburg.cloud): https://userstyles.world/style/13089  
+GaWo (https://gauss-gymnasium.de/gawo): https://userstyles.world/style/14913
+GaWo Nord (https://gauss-gymnasium.de/gawo): https://userstyles.world/style/15366
 
 ---
 > planned:
