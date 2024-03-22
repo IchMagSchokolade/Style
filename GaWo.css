@@ -214,4 +214,8 @@
         border: 1.5px solid var(--borders);
         color: var(--color2);
     }
+    #top {
+        background: url('https://gauss-gymnasium.de/gawo/design/images/head_new2.jpg') no-repeat center center;
+        background-size: contain;
+    }
 }
