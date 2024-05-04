@@ -18,6 +18,7 @@ GaWo Nord (https://gauss-gymnasium.de/gawo): https://userstyles.world/style/1536
 >  - https://brandenburg.cloud
 >  - https://schulen-ffedu.de
 >  - https://gauss-gymnasium.de/gawo
+>  - https://gauss-gymnasium.de/plan
 ---
 If a website updates and the Style breaks, please create an issue and I will update the Style as soon as possible. 
 Requests are also possible.
