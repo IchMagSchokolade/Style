@@ -1,24 +1,29 @@
 /* ==UserStyle==
 @name           VPlan
 @namespace      github.com/openstyles/stylus
-@version        0.0.1
+@version        0.0.2
 @description    Style for VPlan
 @author         Daniel Lehmann
 ==/UserStyle== */
 @-moz-document url-prefix("https://gauss-gymnasium.de/plan/") {
     :root {
-        --background: #090909;
-        --background-dots: #1c1c1c
+        --background: #111;
+        --background-dots: #333
     }
     body {
         background-image: radial-gradient(var(--background-dots) 1px, var(--background) 0);
         background-size: 20px 20px;
     }
     #main,
-    #wrapper {
+    #wrapper,
+    #bottom,
+    #sidebar-left ul ul {
         background: transparent
     }
     #wrapper {
         backdrop-filter: contrast(105%);
+    }
+    #bottom {
+        backdrop-filter: contrast(108%);
     }
 }
