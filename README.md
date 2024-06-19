@@ -8,14 +8,13 @@ GaWo (https://gauss-gymnasium.de/gawo): https://userstyles.world/style/14913
 GaWo Nord (https://gauss-gymnasium.de/gawo): https://userstyles.world/style/15366
 
 ---
-> planned:
+> **planned:**
 >  - https://mallig.eduvinet.de
 >  - https://gm2.m24ffo.de
 >  - https://www.wikipedia.org/
 >
-> in development:
+> **in development:**
 >  - https://brandenburg.cloud
->  - https://schulen-ffedu.de
 >  - https://gauss-gymnasium.de/gawo
 >  - https://gauss-gymnasium.de/plan
 ---
