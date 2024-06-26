@@ -5,217 +5,224 @@
 @description    Style for GaWo
 @author         Daniel Lehmann (https://github.com/IchMagSchokolade)
 @supportURL     https://github.com/IchMagSchokolade/Style/issues
-@license        CC BY-NC
 ==/UserStyle== */
-@-moz-document url-prefix("https://gauss-gymnasium.de/gawo") {
-    :root {
-        --background: #040D12;
-        --background-lighter: #071821;
-        --borders: #0d2b3b;
-        --color1: #183D3D;
-        --color2: #5C8374;
-        --color3: #93B1A6;
-        --text: #f2faf7;
-    }
-    #wrapper {
-        width: 90%;
-        background: var(--background);
-    }
-    body,
-    #content {
-        background: var(--background);
-    }
-    .shadow {
-        box-shadow: none;
-    }
-    #footer {
-        color: var(--color3);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-    }
-    a:hover {
-        text-decoration: none;
-    }
-    #usernav a,
-    #nav a {
-        color: var(--color2) !important
-    }
-    #usernav {
-        left: 30%;
-    }
-    #nav {
-        left: 50% !important;
-    }
-    #main h1,
-    #main h2 {
-        color: var(--color1);
-        border: none;
-    }
-    div#main {
-        color: var(--text);
-    }
-    div#sidebar h3 {
-        background: var(--background);
-        color: var(--color2);
-    }
-    .success,
-    .error {
-        background: var(--background-lighter);
-        color: var(--color1) !important;
-        border: 1.5px solid var(--borders);
-    }
-    .hoverdiv {
-        background: var(--background-lighter);
-        color: var(--color2) !important;
-        border: 1.5px solid var(--borders);
-    }
-    input[type="text"],
-    select,
-    input[type="submit"],
-    .submit {
-        text-shadow: none;
-        background: var(--background-lighter);
-        color: var(--color2);
-        border: 1.5px solid var(--borders);
-    }
-    input[type="submit"]:hover,
-    select:hover,
-    input[type="text"]:hover,
-    .submit:hover {
-        border-color: var(--borders);
-        filter: brightness(200%);
-    }
-    #sidebar ul li a {
-        color: var(--color3);
-    }
-    #sidebar ul li::marker {
-        color: var(--color3);
-    }
-    .veranst_half {
-        background: var(--background-lighter);
-        border-bottom: 2px solid var(--borders);
-        border-top: 2px solid var(--borders);
-    }
-    .flag {
-        border-top: 1px solid var(--borders);
-        background: var(--background-lighter) !important;
-    }
-    .teilnehmerliste,
-    .betreuerliste {
-        background: var(--background-lighter);
-    }
-    .betreuerliste {
-        border-bottom: 2px solid var(--borders);
-        margin-bottom: 0;
-    }
-    .notice {
-        background: var(--background-lighter);
-    }
-    h3.hd {
-        background: var(--background-lighter);
-        border-bottom: 2px solid var(--borders);
-    }
-    #wrapper {
-        justify-content: center;
-        align-content: center;
-        display: grid;
-    }
-    .pagination {
-        background: var(--background);
-    }
-    .pagination a {
-        background: var(--background-lighter);
-        color: var(--color2);
-    }
-    .pagination .currentpage {
-        color: var(--color1) !important;
-        border: none;
-    }
-    .suchdiv {
-        border: 1.5px solid var(--borders);
-    }
-    .vdetails {
-        background: var(--background-lighter);
-    }
-    .suchdiv .vkarte_bestellen a {
-        color: var(--color2) !important
-    }
-    .suchdiv h4 a {
-        color: var(--color2)
-    }
-    .suchdiv h4 a:hover {
-        color: var(--color1)
-    }
-    .v_sep {
-        background-image: repeating-linear-gradient( 135deg, var(--borders), var(--borders) 4px, var(--background) 4px, var(--background) 8px);
-        margin-bottom: 20px;
-    }
-    .detailsdiv {
-        background: var(--background);
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    #nav li a:hover,
-    #usernav li a:hover {
-        background: var(--background-lighter);
-        border: none;
-    }
-    th {
-        background: var(--background-lighter);
-        border: 1px solid var(--borders)
-    }
-    .ptlist td {
-        border: 1px solid var(--borders);
-    }
-    textarea {
-        border: 1px solid var(--borders);
-        background: var(--background-lighter);
-        text-shadow: none;
-        color: var(--text);
-    }
-    textarea {
-        border: 1px solid var(--borders);
-    }
-    .tabs li a {
-        background: var(--background-lighter);
-        color: var(--color2);
-        background-image: none !important;
-        padding: 0.5em;
-        border: 1.5px solid var(--borders);
-    }
-    .tabs li a:hover {
-        text-decoration: none;
-        filter: brightness(200%);
-    }
-    .systemmeldungen li {
-        background: var(--background-lighter);
-        border-bottom: 1.5px solid var(--borders);
-    }
-    .systemmeldungen li a {
-        color: var(--color3);
-    }
-    .systemmeldungen li:hover {
-        filter: brightness(200%);
-    }
-    .comment {
-        background: var(--background-lighter);
-        border: 2px solid var(--borders);
-        border-radius: 0.5em
-    }
-    .comment span {
-        color: var(--color2);
-    }
-    input[type="button"] {
-        background: var(--background-lighter);
-        text-shadow: none;
-        border: 1.5px solid var(--borders);
-        color: var(--color2);
-    }
-    #top {
-        background: url('https://gauss-gymnasium.de/gawo/design/images/head_new2.jpg') no-repeat center center;
-        background-size: contain;
-    }
+@-moz-document url-prefix("https://gauss-gymnasium.de/gawo")
+{
+  :root {
+    --background: #040d12;
+    --background-lighter: #071821;
+    --borders: #0d2b3b;
+    --color1: #183d3d;
+    --color2: #5c8374;
+    --color3: #93b1a6;
+    --text: #f2faf7;
+  }
+  #wrapper {
+    width: 90%;
+    background: var(--background);
+  }
+  body,
+  #content {
+    background: var(--background);
+  }
+  .shadow {
+    box-shadow: none;
+  }
+  #footer {
+    color: var(--color3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  #usernav a,
+  #nav a {
+    color: var(--color2) !important;
+  }
+  #usernav {
+    left: 30%;
+  }
+  #nav {
+    left: 50% !important;
+  }
+  #main h1,
+  #main h2 {
+    color: var(--color1);
+    border: none;
+  }
+  div#main {
+    color: var(--text);
+  }
+  div#sidebar h3 {
+    background: var(--background);
+    color: var(--color2);
+  }
+  .success,
+  .error {
+    background: var(--background-lighter);
+    color: var(--color1) !important;
+    border: 1.5px solid var(--borders);
+  }
+  .hoverdiv {
+    background: var(--background-lighter);
+    color: var(--color2) !important;
+    border: 1.5px solid var(--borders);
+  }
+  input[type="text"],
+  select,
+  input[type="submit"],
+  .submit {
+    text-shadow: none;
+    background: var(--background-lighter);
+    color: var(--color2);
+    border: 1.5px solid var(--borders);
+  }
+  input[type="submit"]:hover,
+  select:hover,
+  input[type="text"]:hover,
+  .submit:hover {
+    border-color: var(--borders);
+    filter: brightness(200%);
+  }
+  #sidebar ul li a {
+    color: var(--color3);
+  }
+  #sidebar ul li::marker {
+    color: var(--color3);
+  }
+  .veranst_half {
+    background: var(--background-lighter);
+    border-bottom: 2px solid var(--borders);
+    border-top: 2px solid var(--borders);
+  }
+  .flag {
+    border-top: 1px solid var(--borders);
+    background: var(--background-lighter) !important;
+  }
+  .teilnehmerliste,
+  .betreuerliste {
+    background: var(--background-lighter);
+  }
+  .betreuerliste {
+    border-bottom: 2px solid var(--borders);
+    margin-bottom: 0;
+  }
+  .notice {
+    background: var(--background-lighter);
+  }
+  h3.hd {
+    background: var(--background-lighter);
+    border-bottom: 2px solid var(--borders);
+  }
+  #wrapper {
+    justify-content: center;
+    align-content: center;
+    display: grid;
+  }
+  .pagination {
+    background: var(--background);
+  }
+  .pagination a {
+    background: var(--background-lighter);
+    color: var(--color2);
+  }
+  .pagination .currentpage {
+    color: var(--color1) !important;
+    border: none;
+  }
+  .suchdiv {
+    border: 1.5px solid var(--borders);
+  }
+  .vdetails {
+    background: var(--background-lighter);
+  }
+  .suchdiv .vkarte_bestellen a {
+    color: var(--color2) !important;
+  }
+  .suchdiv h4 a {
+    color: var(--color2);
+  }
+  .suchdiv h4 a:hover {
+    color: var(--color1);
+  }
+  .v_sep {
+    background-image: repeating-linear-gradient(
+      135deg,
+      var(--borders),
+      var(--borders) 4px,
+      var(--background) 4px,
+      var(--background) 8px
+    );
+    margin-bottom: 20px;
+  }
+  .detailsdiv {
+    background: var(--background);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #nav li a:hover,
+  #usernav li a:hover {
+    background: var(--background-lighter);
+    border: none;
+  }
+  th {
+    background: var(--background-lighter);
+    border: 1px solid var(--borders);
+  }
+  .ptlist td {
+    border: 1px solid var(--borders);
+  }
+  textarea {
+    border: 1px solid var(--borders);
+    background: var(--background-lighter);
+    text-shadow: none;
+    color: var(--text);
+  }
+  textarea {
+    border: 1px solid var(--borders);
+  }
+  .tabs li a {
+    background: var(--background-lighter);
+    color: var(--color2);
+    background-image: none !important;
+    padding: 0.5em;
+    border: 1.5px solid var(--borders);
+  }
+  .tabs li a:hover {
+    text-decoration: none;
+    filter: brightness(200%);
+  }
+  .systemmeldungen li {
+    background: var(--background-lighter);
+    border-bottom: 1.5px solid var(--borders);
+  }
+  .systemmeldungen li a {
+    color: var(--color3);
+  }
+  .systemmeldungen li:hover {
+    filter: brightness(200%);
+  }
+  .comment {
+    background: var(--background-lighter);
+    border: 2px solid var(--borders);
+    border-radius: 0.5em;
+  }
+  .comment span {
+    color: var(--color2);
+  }
+  input[type="button"] {
+    background: var(--background-lighter);
+    text-shadow: none;
+    border: 1.5px solid var(--borders);
+    color: var(--color2);
+  }
+  #top {
+    background: url("https://gauss-gymnasium.de/gawo/design/images/head_new2.jpg")
+      no-repeat center center;
+    background-size: contain;
+  }
 }
