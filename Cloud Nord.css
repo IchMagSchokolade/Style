@@ -2,9 +2,8 @@
 @name           Cloud Nord
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
-@description    Nord Palette for Brandenburg Cloud
-@author         Daniel Lehmann (https://github.com/IchMagSchokolade)
-@supportURL     https://github.com/IchMagSchokolade/Style/issues
+@description    Nord Patelle for Brandenburg Cloud
+@author         Daniel Lehmann
 ==/UserStyle== */
 @-moz-document domain("brandenburg.cloud") {
   :root {
@@ -17,6 +16,11 @@
   * {
     box-shadow: none !important;
     border-color: var(--border) !important;
+  }
+  .mb-1,
+  footer,
+  .input-group-addon * {
+    background: transparent !important;
   }
   .sc-card-footer,
   .sc-card-body {
@@ -33,8 +37,17 @@
   .card {
     background: var(--background) !important;
   }
-  .sc-card-header {
+  .cloud-logo {
+    filter: invert(70%) sepia(99%) saturate(3301%) hue-rotate(313deg)
+      brightness(82%) contrast(77%) !important;
+  }
+  .sc-card-header,
+  .form-control,
+  .input-group-addon {
     background: var(--background-accent) !important;
+  }
+  form.login-form button {
+    border: none !important;
   }
   .card,
   .sc-card {
@@ -55,7 +68,7 @@
   .h6 {
     color: var(--text) !important;
   }
-  li a {
+  a {
     color: var(--color) !important;
   }
 }
