@@ -22,7 +22,6 @@
     border-color: var(--border) !important;
   }
   .mb-1,
-  footer,
   .input-group-addon *,
   .sc-card .tag {
     background: transparent !important;
@@ -47,7 +46,8 @@
   .sticky,
   #main-content,
   .top-bar-actions,
-  .card {
+  .card,
+  footer {
     background: var(--background) !important;
   }
   .cloud-logo,
@@ -55,7 +55,6 @@
     filter: invert(70%) sepia(99%) saturate(3301%) hue-rotate(313deg)
       brightness(82%) contrast(77%) !important;
   }
-  .sc-card-header,
   .form-control,
   .input-group-addon,
   body #loginarea .btn,
@@ -121,7 +120,22 @@
   .border {
     border-bottom: 1px solid var(--border) !important;
   }
-  .room-avatar .v-avatar {
-    filter: saturate(35%) !important;
+  .room-avatar .v-avatar,
+  .sc-card-header {
+    filter: saturate(35%) opacity(70%) !important;
+  }
+  .room-avatar .v-avatar:hover,
+  .sc-card-header:hover {
+    filter: saturate(70%) opacity(100%) !important;
+  }
+  footer {
+    display: grid !important;
+    margin: 0 !important;
+    padding-bottom: 25px !important;
+  }
+  footer:after {
+    content: "Style by Daniel Lehmann - based on Nord color palette" !important;
+    color: var(--text) !important;
+    justify-self: center !important;
   }
 }
