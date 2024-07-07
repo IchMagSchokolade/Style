@@ -16,8 +16,7 @@
     --color: #bf616a;
     --color2: #a3be8c;
   }
-  *,
-  .v-card--hover::before {
+  * {
     box-shadow: none !important;
     border-color: var(--border) !important;
   }
@@ -47,7 +46,8 @@
   #main-content,
   .top-bar-actions,
   .card,
-  footer {
+  footer,
+  .v-expansion-panels * {
     background: var(--background) !important;
   }
   .cloud-logo,
@@ -64,7 +64,10 @@
   .v-field--variant-solo,
   .v-skeleton-loader__bone,
   .v-skeleton-loader,
-  .v-card {
+  .v-card,
+  a.active,
+  .v-overlay__content .v-list,
+  .section-homework .btn {
     background: var(--background-accent) !important;
   }
   form.login-form button {
@@ -73,8 +76,12 @@
   .card,
   .sc-card,
   .v-card {
-    border: 1px solid var(--border) !important;
+    border: 1.5px solid var(--border) !important;
     border-radius: 5px !important;
+  }
+  .v-divider {
+    background: var(--border) !important;
+    opacity: 1 !important;
   }
   h1,
   h2,
@@ -100,32 +107,41 @@
   .alert-button.danger i {
     color: var(--color) !important;
   }
+  a.subitem svg {
+    fill: var(--color) !important;
+  }
   .fa.fa-eye-slash,
   .text-muted *,
   .sidebar .contents .list .list-item.active *,
-  .text-primary {
+  .text-primary,
+  .sidebar-list a.active {
     color: var(--color2) !important;
+  }
+  .sidebar-list a.subitem.active svg {
+    fill: var(--color2) !important;
   }
   .v-tab__slider {
     background: var(--color2) !important;
   }
   .sc-card .tag,
   .alert-date.text-nowrap.text-muted {
-    border: 1px solid;
+    border: 1.5px solid;
     color: var(--color2) !important;
   }
   .alert-date.text-nowrap.text-muted {
     border: none !important;
   }
   .border {
-    border-bottom: 1px solid var(--border) !important;
+    border-bottom: 1.5px solid var(--border) !important;
   }
   .room-avatar .v-avatar,
-  .sc-card-header {
+  .sc-card-header,
+  .v-list-item .v-icon {
     filter: saturate(35%) opacity(70%) !important;
   }
   .room-avatar .v-avatar:hover,
-  .sc-card-header:hover {
+  .sc-card-header:hover,
+  .v-list-item .v-icon:hover {
     filter: saturate(70%) opacity(100%) !important;
   }
   footer {
