@@ -47,7 +47,8 @@
   .top-bar-actions,
   .card,
   footer,
-  .v-expansion-panels * {
+  .v-expansion-panels *,
+  .tabContainer .tabs .tab {
     background: var(--background) !important;
   }
   .cloud-logo,
@@ -67,7 +68,9 @@
   .v-card,
   a.active,
   .v-overlay__content .v-list,
-  .section-homework .btn {
+  .section-homework .btn,
+  .section-teams .btn-primary,
+  .sidebar-list li a.active {
     background: var(--background-accent) !important;
   }
   form.login-form button {
@@ -104,7 +107,8 @@
   }
   a,
   .text-danger,
-  .alert-button.danger i {
+  .alert-button.danger i,
+  .sidebar-list {
     color: var(--color) !important;
   }
   a.subitem svg {
@@ -114,7 +118,9 @@
   .text-muted *,
   .sidebar .contents .list .list-item.active *,
   .text-primary,
-  .sidebar-list a.active {
+  .sidebar-list a.active,
+  .tab.active span,
+  .tab.active i {
     color: var(--color2) !important;
   }
   .sidebar-list a.subitem.active svg {
