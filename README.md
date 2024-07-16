@@ -12,6 +12,7 @@ GaWo Nord (https://gauss-gymnasium.de/gawo): https://userstyles.world/style/1536
 >  - https://mallig.eduvinet.de
 >  - https://gm2.m24ffo.de
 >  - https://www.wikipedia.org/
+>  - https://distrowatch.com
 >
 > **in development:**
 >  - https://brandenburg.cloud
